@@ -11,6 +11,8 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 
 
+
+
 const routes = createBrowserRouter([
   {
     path :"/",
@@ -40,10 +42,13 @@ const routes = createBrowserRouter([
       element : <Contact/>
     }]
   }
-])
+],{
+  basename:"/Real-Estate-Business-Website/",
+}
+)
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <StrictMode >
       <RouterProvider router={routes}/>
   </StrictMode>,
 )
