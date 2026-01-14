@@ -1,9 +1,9 @@
 
-
+import SectionHeader from '../components/SectionHeader'
 const Home = () => {
     return (
-        <div>
-            
+        <div className="container mx-auto px-4 bg-gray-50 dark:bg-[#141414] min-h-screen">
+         
         </div>
     )
 }
