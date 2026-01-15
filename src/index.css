@@ -4,4 +4,17 @@
 
 @theme{
     --font-urbanist : "Urbanist", sans-serif;
+    --color-gray-08: #141414;
+    --color-gray-10: #1A1A1A;
+    --color-gray-15: #262626;
+    --color-gray-30: #4D4D4D;
+    --color-gray-60: #999999;
+    --color-purple-60: #703BF7;
+
+}
+
+@layer base {
+  body {
+    font-family: var(--font-urbanist);
+  }
 }

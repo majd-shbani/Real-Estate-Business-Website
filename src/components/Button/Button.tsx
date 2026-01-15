@@ -13,7 +13,7 @@ const Button = ({ text, to, className }: ButtonProps) => {
       return (
             <button
                   onClick={handleClick}
-                  className={`px-5 py-3.5 text-[14px] font-medium rounded-lg cursor-pointer border border-[#262626] 
+                  className={`px-5 py-3.5 text-[14px] font-medium rounded-lg cursor-pointer border border-gray-15 
                               2xl:px-6 2xl:py-4.5 2xl:text-[18px] 2xl:rounded-[10px] ${className}`}>
                   {text}
             </button>
