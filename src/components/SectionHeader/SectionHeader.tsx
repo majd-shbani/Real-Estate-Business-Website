@@ -1,5 +1,5 @@
-import Star from './Star';
-import Button from './Button/Button';
+import Star from '../Star';
+import Button from '../Button/Button';
 
 interface SectionHeaderProps {
     title: string;
