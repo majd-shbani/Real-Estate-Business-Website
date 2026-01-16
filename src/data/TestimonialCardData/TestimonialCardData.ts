@@ -31,3 +31,9 @@ export const testimonialsData = [
 export const StarIcon = {
     icon: "assets/icons/Shape.svg"
 }
+
+export const TestimonialHeaderData = {
+    title: "What Our Clients Say",
+    description: "Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.",
+    buttonText: "View All Testimonials"
+}
