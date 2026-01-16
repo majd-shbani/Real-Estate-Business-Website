@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { ButtonData } from "../../data/FaqCardData/FaqCardData"
 import type { FaqCardProps } from "../../interfaces/FaqCard/FaqCard"
 import BaseCard from "../BaseCard/BaseCard"
@@ -15,4 +16,4 @@ const FaqCard = ({card}: FaqCardProps) => {
   )
 }
 
-export default FaqCard
+export default memo(FaqCard)
