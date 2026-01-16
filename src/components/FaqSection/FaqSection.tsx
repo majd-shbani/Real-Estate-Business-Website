@@ -1,13 +1,21 @@
-import { faqCardData } from "../../data/FaqCardData/FaqCardData"
+import { faqCardData, FaqHeaderData } from "../../data/FaqCardData/FaqCardData"
 import FaqCard from "../FaqCard/FaqCard"
+import Section from "../Section/Section"
 
 const FaqSection = () => {
   return (
-      <div className='grid grid-cols-1 xl:grid-cols-3 xl:gap-5 2xl:gap-7.5'>
+      <Section 
+        title={FaqHeaderData.title}
+        description={FaqHeaderData.description}
+        buttonText={FaqHeaderData.buttonText}
+        className="xl:mb-18! 2xl:mb-24!"
+      >
+        <div className='grid grid-cols-1 xl:grid-cols-3 xl:gap-5 2xl:gap-7.5'>
         {faqCardData.map(card => (
             <FaqCard key={card.id} card={card}/>
         ))}
       </div>
+      </Section>
   )
 }
 

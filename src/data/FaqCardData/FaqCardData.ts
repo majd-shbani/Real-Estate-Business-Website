@@ -19,3 +19,9 @@ export const faqCardData = [
 export const ButtonData = {
    text: "Read More"
 }
+
+export const FaqHeaderData = {
+   title: "Frequently Asked Questions",
+   description: "Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.",
+   buttonText: "View All FAQ’s"
+}
