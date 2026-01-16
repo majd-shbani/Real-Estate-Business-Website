@@ -1,6 +1,6 @@
 import { Features } from "../../data/FeaturedSectionData/FeaturedSectionData"
 import FeaturedCard from "../FeaturedCard/FeaturedCard"
-import Section from "../Section"
+import Section from "../Section/Section"
 
 const FeaturedSection = () => {
       return (

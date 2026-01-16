@@ -9,7 +9,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price }: Fe
       const toggleReadMore = () => {
             setIsReadMore(!isReadMore);
       };
-      
+
       return (
             <BaseCard className="p-6! xl:p-7.5! 2xl:p-10! max-w-125 xl:max-w-full dark:text-white">
                   <div className="rounded-[10px] mb-4 xl:mb-5 2xl:mb-7.5 ">
@@ -43,7 +43,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price }: Fe
                               </div>
                               <Button
                                     text="View Property Details" to={`/propertyDetails/${id}`}
-                                    className="bg-purple-60 border-none! text-white px-8.75! xl:px-[47.6px] 2xl:px-[54.5px]!">
+                                    className=" ... max-[400px]:text-[10px] bg-purple-60 border-none! text-white px-[2.7vw] xl:px-[2.4vw]! 2xl:px-[2.8vw]! [@media(min-width:1500px)_and_(max-width:1810px)]:px-4!">
                               </Button>
                         </div>
                   </div>
