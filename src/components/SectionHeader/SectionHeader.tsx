@@ -10,7 +10,7 @@ interface SectionHeaderProps {
 
 const SectionHeader = ({ title, description, buttonText, to }: SectionHeaderProps) => {
     return (
-        <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-6 lg:gap-37.5 xl:gap-50 font-urbanist  ">
+        <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-6 lg:gap-37.5 xl:gap-50 font-urbanist mb-10 xl:mb-15 2xl:mb-20">
             <div className="flex flex-col flex-1 gap-4">
                 <div className="flex gap-1 mb-1">
                     <Star properties="w-7 h-7 opacity-100 mt-0" />

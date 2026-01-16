@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { StarIcon } from "../../data/TestimonialCardData/TestimonialCardData"
 import type { TestimonialCardProps } from "../../interfaces/TestimonialCard/TestimonialCard"
 import BaseCard from "../BaseCard/BaseCard"
@@ -15,7 +16,7 @@ const TestimonialCard = ({card}: TestimonialCardProps) => {
         </div>
         <div className="flex items-center gap-2.5 2xl:gap-3">
           <div className="rounded-full 2xl:w-15">
-            <img src={card.avatar} alt="avatar" className="object-cover w-full h-full" />
+            <img src={card.avatar} alt={card.name} width={60} height={60} className="object-cover w-full h-full" />
           </div>
           <div className="flex flex-col 2xl:gap-0.5">
             <p className="text-white text-base xl:text-lg 2xl:text-xl font-medium leading-[150%]">{card.name}</p>
@@ -26,4 +27,4 @@ const TestimonialCard = ({card}: TestimonialCardProps) => {
   )
 }
 
-export default TestimonialCard
+export default memo(TestimonialCard) 

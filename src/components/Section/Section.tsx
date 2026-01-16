@@ -8,6 +8,7 @@ interface SectionProps {
     to?: string;
     padding?: string;
     children?:ReactNode;
+    className?: string;
 }
 
 const Section = ({ 
@@ -16,9 +17,10 @@ const Section = ({
     buttonText, 
     to,
     children,
+    className
 }: SectionProps) => {
     return (
-        <section className={`w-full py-10 px-4 md:px-12 lg:px-20 xl:px-40.5 `}>
+        <section className={`w-full px-4 xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5 ${className || ''}`}>
             <SectionHeader 
                 title={title}
                 description={description}
