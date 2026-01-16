@@ -1,4 +1,5 @@
-import SectionHeader from './SectionHeader';
+import type { ReactNode } from 'react';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 interface SectionProps {
     title: string;
@@ -6,6 +7,7 @@ interface SectionProps {
     buttonText: string;
     to?: string;
     padding?: string;
+    children?:ReactNode;
 }
 
 const Section = ({ 
@@ -13,6 +15,7 @@ const Section = ({
     description, 
     buttonText, 
     to,
+    children,
 }: SectionProps) => {
     return (
         <section className={`w-full py-10 px-4 md:px-12 lg:px-20 xl:px-40.5 `}>
@@ -21,7 +24,9 @@ const Section = ({
                 description={description}
                 buttonText={buttonText}
                 to={to}
+
             />
+            {children}
         </section>
     );
 };
