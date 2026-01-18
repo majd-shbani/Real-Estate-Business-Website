@@ -12,7 +12,6 @@ import { journeyProps } from "../data/JourneyStart/StartJourney"
 const Home = () => {
     return (
         <div>
-            <HeroHome/>
             <StartJourney journeyProps={journeyProps} />
            <Footer footerProps={footerProps} />
           
