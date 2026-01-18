@@ -1,16 +1,21 @@
-import FaqSection from "../components/FaqSection/FaqSection";
-import FeaturedSection from "../components/FeaturedSection/FeaturedSection";
-import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
+import Footer, { type FooterProps } from "../components/Footer/Footer"
+import StartJourney from "../components/StartJourney/StartJourney"
+import { footerProps } from "../data/Footer/Footer"
+import { journeyProps } from "../data/JourneyStart/StartJourney"
+
+
+
+
 
 
 const Home = () => {
-      return (
-            <div className="bg-gray-08">
-                  <FeaturedSection></FeaturedSection>
-                  <TestimonialSection />
-                  <FaqSection />
-            </div>
-      )
+    return (
+        <div>
+            <StartJourney journeyProps={journeyProps} />
+           <Footer footerProps={footerProps} />
+          
+        </div>
+    )
 }
 
 export default Home;
