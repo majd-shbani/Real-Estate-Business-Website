@@ -15,10 +15,10 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price }: Fe
                   <div className="rounded-[10px] mb-4 xl:mb-5 2xl:mb-7.5 ">
                         <img src={image} alt={alt} className="w-full"></img>
                   </div>
-                  <div>
+                  <div className=" flex flex-col grow">
                         <h3>{title}</h3>
-                        <p className="text-[14px] font-medium text-gray-60 leading-[150%] xl:text-[16px] 2xl:text-[18px]">
-                              {isReadMore ? description.slice(0, 70) + "..." : description}
+                        <p className="text-[14px] font-medium text-gray-60 leading-[150%] xl:text-[16px] 2xl:text-[18px] min-h-15">
+                              {isReadMore ? description.slice(0, 60) + "..." : description}
 
                               <span
                                     onClick={toggleReadMore}
@@ -36,7 +36,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price }: Fe
                                     </div>
                               ))}
                         </div>
-                        <div className="flex justify-between items-center gap-7.5">
+                        <div className="flex justify-between items-center gap-7.5  mt-auto">
                               <div>
                                     <p className="text-[14px] 2xl:text-[18px] font-medium text-gray-60">Pric:</p>
                                     <p className="text-[18px] xl:text-[20px] 2xl:text-[24px] font-semibold">{`$${price}`}</p>
