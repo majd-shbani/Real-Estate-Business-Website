@@ -6,7 +6,7 @@ import StarRating from "./StarRating"
 
 const TestimonialCard = ({card}: TestimonialCardProps) => {
   return (
-    <BaseCard className="flex flex-col justify-between h-full">
+    <BaseCard className="flex flex-col justify-between h-full mx-auto xl:mx-0 xl:w-full">
         <div>
           <StarRating icon={StarIcon.icon} rating={card.rating}/>
           <div className="text-white flex flex-col gap-1.5 xl:gap-2.5 2xl:gap-3.5 mb-6 xl:mb-7.5 2xl:mb-10">
