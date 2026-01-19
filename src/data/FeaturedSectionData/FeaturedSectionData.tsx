@@ -3,7 +3,7 @@ import type { FeaturedCardProps } from "../../interfaces/FeaturedCard/FeaturedCa
 export const Features: FeaturedCardProps[] = [
       {
             id: "1",
-            image: "assets/images/Seaside Serenity Villa.png",
+            image: "assets/images/Seaside Serenity Villa.webp",
             alt: "Seaside Serenity Villa", 
             title: "Seaside Serenity Villa", 
             description: `A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood. 
@@ -18,7 +18,7 @@ export const Features: FeaturedCardProps[] = [
       },
       {
             id: "2",
-            image: "assets/images/Metropolitan Haven.png",
+            image: "assets/images/Metropolitan Haven.webp",
             alt: "Metropolitan Haven",
             title: "Metropolitan Haven",
             description: `A chic and fully-furnished 2-bedroom apartment with panoramic city views.
@@ -32,7 +32,7 @@ export const Features: FeaturedCardProps[] = [
       },
       {
             id: "3",
-            image: "assets/images/Rustic Retreat Cottage.png",
+            image: "assets/images/Rustic Retreat Cottage.webp",
             alt: "Rustic Retreat Cottage",
             title: "Rustic Retreat Cottage",
             description: `An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community, offering both security and style.
