@@ -4,7 +4,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 interface SectionProps {
     title: string;
     description: string;
-    buttonText: string;
+    buttonText?: string;
     to?: string;
     padding?: string;
     children?:ReactNode;
@@ -25,7 +25,8 @@ const Section = ({
                 title={title}
                 description={description}
                 buttonText={buttonText}
-                to={to}
+                to={to} 
+                className={className}
 
             />
             {children}
