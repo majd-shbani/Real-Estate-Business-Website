@@ -9,7 +9,7 @@ const TestimonialSection = () => {
       description={TestimonialHeaderData.description}
       buttonText={TestimonialHeaderData.buttonText}
     >
-      <div className='grid grid-cols-1 xl:grid-cols-3 xl:gap-5 2xl:gap-7.5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-5 2xl:gap-7.5'>
         {testimonialsData.map(card => (
           <TestimonialCard key={card.id} card={card} />
         ))}
