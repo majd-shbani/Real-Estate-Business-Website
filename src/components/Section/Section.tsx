@@ -20,7 +20,7 @@ const Section = ({
     className
 }: SectionProps) => {
     return (
-        <section className={`w-full px-4 xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-10 xl:mb-15 2xl:mb-20 ${className || ''}`}>
+        <section className={`w-full px-4 xl:px-[80px] 2xl:px-[162px] mb-10 xl:mb-15 2xl:mb-20 ${className || ''}`}>
             <SectionHeader 
                 title={title}
                 description={description}
