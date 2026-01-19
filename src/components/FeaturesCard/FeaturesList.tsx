@@ -26,7 +26,7 @@ const FeaturesList = () => {
     ];
 
     return (
-        <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-2.5 lg:gap-5 items-start px-4 lg:px-5">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-2.5 lg:gap-5 items-start px-4 lg:px-5 mb-20 xl:mb-30 2xl:mb-37.5">
             {features.map((feature) => (
                 <FeaturesCard
                     key={feature.id}
