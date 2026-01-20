@@ -29,6 +29,6 @@ export interface FooterProps {
     
 }
 
-export interface Footer {
+export interface FooterInterface {
     footerProps : FooterProps
 }

@@ -9,6 +9,6 @@ export let journeyProps : JourneyProps = {
     button : {
         text: "Explore Properties",
         to: "/",
-        style: "absolute  bottom-4 w-[93%] bg-purple-60 sm:bottom-15 xl:right-40 xl:top-[105px] xl:w-38 xl:h-13 xl:text-[14px] xl:px-4 2xl:w-48  2xl:px-[15px] 2xl:py-[15px] "
+        style: "absolute  bottom-4 w-[93%] bg-purple-60 sm:bottom-15 md:top-[90px] md:right-20 lg:right-30 2xl:right-50 md:top-[105px] 2xl:top-[152px] md:w-38 md:h-13 lg:text-[14px] md:px-4 2xl:w-48  2xl:px-[15px] 2xl:py-[15px] "
     }
 }
