@@ -4,12 +4,8 @@ import Values from "../components/Values/Values"
 
 const AboutUs = () => {
     return (
-<<<<<<< HEAD
-        <div>
-            <HeroAbout img="/Real-Estate-Business-Website/assets/images/heroAbout.webp" alt="Hero Image About Page"/>
-=======
-        <div className="bg-gray-08 min-h-screen"> 
->>>>>>> 995f437ef7397a228be453780f17271b33df44b9
+        <div className="bg-gray-08 min-h-screen">
+            <HeroAbout img="/Real-Estate-Business-Website/assets/images/heroAbout.webp" alt="Hero Image About Page"/> 
             <NavigationSection/>
             <Values />
         </div>
