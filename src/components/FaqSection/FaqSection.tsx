@@ -10,7 +10,7 @@ const FaqSection = () => {
         buttonText={FaqHeaderData.buttonText}
         className="xl:mb-18! 2xl:mb-24!"
       >
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-5 2xl:gap-7.5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7.5 sm:gap-5 2xl:gap-7.5'>
         {faqCardData.map(card => (
             <FaqCard key={card.id} card={card}/>
         ))}

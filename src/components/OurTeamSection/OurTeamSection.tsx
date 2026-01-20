@@ -9,7 +9,7 @@ const OurTeamSection = () => {
         description={TeamHeaderData.description}
         buttonText={TeamHeaderData.ButtonText}
     >
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-5 2xl:gap-7.5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-5 2xl:gap-7.5'>
           {EmployeeCardData.map(card => (
             <EmployeeCard key={card.id} card={card} />
           ))}
