@@ -13,6 +13,9 @@
     --color-gray-30: #4D4D4D;
     --color-gray-60: #999999;
     --color-purple-60: #703BF7;
+    --shadow-thick-grey: 0px 0px 0px 8px #191919;
+    --shadow-medium-grey: 0px 0px 0px 6px #191919;
+    --shadow-thin-grey: 0px 0px 0px 4px #191919;
 
 }
 
