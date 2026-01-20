@@ -26,7 +26,6 @@ const Section = ({
                 description={description}
                 buttonText={buttonText}
                 to={to}
-
             />
             {children}
         </section>
