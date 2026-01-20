@@ -7,7 +7,7 @@ const FeaturedSection = () => {
             <Section title="Featured Properties"
                   description={`Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click ' View Details' for more information.`}
                   buttonText="View All Properties">
-                  <div className="grid grid-cols-1 xl:grid-cols-3 xl:gap-5 2xl:gap-7.5 items-start">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 xl:grid-cols-3 xl:gap-5 2xl:gap-7.5 items-start">
                         {Features.map((item) => (
                               <FeaturedCard
                                     id={item.id}
