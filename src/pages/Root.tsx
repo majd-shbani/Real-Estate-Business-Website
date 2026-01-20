@@ -10,9 +10,9 @@ import Footer from "../components/Footer/Footer"
 
 const Root = () => {
     return (
-        <div className={`text-white bg-gray-08 `}>
+        <div>
             <Nav/>
-            <Outlet/>
+            <Outlet />
             <StartJourney journeyProps={journeyProps} />
             <Footer footerProps={footerProps} />
         </div>
