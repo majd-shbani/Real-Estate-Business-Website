@@ -1,4 +1,10 @@
-import type {  Achievement, AchievementProps } from "../../interfaces/Achievement/Achievement";
+import type { SectionHeaderProps } from "../../components/SectionHeader/SectionHeader";
+import type {  Achievement } from "../../interfaces/Achievement/Achievement";
+
+export const achievementHeader : SectionHeaderProps = {
+    title: "Our Achievements",
+    description: "Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
+};
 
 export const achievementsData : Achievement[] = [
         {   

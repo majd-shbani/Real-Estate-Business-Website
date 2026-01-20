@@ -11,7 +11,7 @@ import Footer from "../components/Footer/Footer"
 const Root = () => {
     return (
         <div>
-            <Nav />
+            <Nav/>
             <Outlet />
             <StartJourney journeyProps={journeyProps} />
             <Footer footerProps={footerProps} />

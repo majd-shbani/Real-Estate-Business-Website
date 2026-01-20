@@ -7,8 +7,8 @@ import type {  FooterInterface } from "../../interfaces/Footer/Footer"
 const Footer = (footerProps : FooterInterface) => {
   return (
     <div className=" font-urbanist ">
-    
-    <div className="  xl:mr-25.25 px-4 py-12.5 sm:px-[40px] lg:px-17 lg:flex w-full lg:gap-8 xl:gap-20 xl:p-20 2xl:h-113.5 2xl:px-40.5 2xl:py-25">
+
+    <div className="  xl:mr-25.25 px-4 py-12.5 sm:px-[40px] lg:px-17 xl:flex w-full  xl:gap-20 xl:p-20 2xl:h-113.5 2xl:px-40.5 2xl:py-25">
       <div className=" ">
         <div className="flex 2xl:gap-2.5 gap-[7.25px] mb-5 2xl:mb-7.5">
        <img className="2xl:w-12 2xl:h-12 w-.5 h-8.5" src={footerProps.footerProps.imageIcon}></img>
@@ -23,7 +23,7 @@ const Footer = (footerProps : FooterInterface) => {
        </form>
       </div>
 
-      <div className="relative grid grid-cols-2 gap-5   border-gray-15 divide-gray-300 lg:divide-none lg:flex lg:gap-[5vw]  2xl:gap-[5.8vw] ">
+      <div className="relative grid grid-cols-2 gap-5   border-gray-15 divide-gray-300 lg:divide-none lg:flex lg:gap-[9vw] xl:gap-[5vw] 2xl:gap-[5.8vw] ">
          <div className="absolute  top-0 inset-x-0 mx-auto   w-px  dark:bg-gray-15 h-53 lg:w-0"  />
          <div className="absolute  bottom-0 inset-x-0 mx-auto  w-px  dark:bg-gray-15 h-63 lg:w-0"  />
         {footerProps.footerProps.footerService.map((colunm ,index) => {
@@ -54,7 +54,7 @@ const Footer = (footerProps : FooterInterface) => {
         <div className=" flex gap-2 items-center justify-center  2xl:gap-4 mx-15.5 sm:mx-auto py-5  xl:my-3.5 2xl:my-6.5 lg:mr-5 ">
             {footerProps.footerProps.socialMedia.map((item) => {
                 return (
-                    <div className="bg-gray-08 border border-gray-08 rounded-full w-15 h-15 p-5 lg:w-10 lg:h-10 lg:px-3 lg:py-2.75 2xl:p-3.5 2xl:w-13 2xl:h-13">
+                    <div className="bg-gray-08 border border-gray-08 rounded-full w-10 h-10 p-3 lg:w-10 lg:h-10 lg:px-3 lg:py-2.75 2xl:p-3.5 2xl:w-13 2xl:h-13">
                     <button><img className=" xl:w-3.75 xl:h-3.75 2xl:w-6 2xl:h-6" src={item.icon} alt="Social Media Icon" /></button>
                     </div>
                 )
@@ -67,4 +67,4 @@ const Footer = (footerProps : FooterInterface) => {
 
 export default Footer
 
-/*w-89.25 h-13 xl:w-76.25 xl:h-13 px-[21.6px] py-[18.5px] mb-12.5 2xl:w-105.75 2xl:h-16.5 2xl:px-[26.5px] 2xl:py-[21.5px]*/
+
