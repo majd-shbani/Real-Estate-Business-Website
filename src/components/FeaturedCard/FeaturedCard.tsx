@@ -11,7 +11,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price }: Fe
       };
 
       return (
-            <BaseCard className="p-6! xl:p-7.5! 2xl:p-10! max-w-125 xl:max-w-full dark:text-white">
+            <BaseCard className="p-6! xl:p-7.5! 2xl:p-10! max-w-112.5 sm:max-w-full xl:max-w-full m-auto">
                   <div className="rounded-[10px] mb-4 xl:mb-5 2xl:mb-7.5 ">
                         <img src={image} alt={alt} className="w-full"></img>
                   </div>

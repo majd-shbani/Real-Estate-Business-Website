@@ -5,8 +5,8 @@ interface FeaturesCardProps {
 
 const FeaturesCard = ({ icon, title }: FeaturesCardProps) => {
     return (
-        <div className="relative bg-[#141414] rounded-3xl py-5 px-3.5 lg:py-10 lg:px-5 border
-         border-[#262626] hover:border-[#703BF7] transition-all duration-300 group flex flex-col items-center justify-center h-full">
+        <div className="relative bg-gray-15 rounded-3xl py-5 px-3.5 lg:py-10 lg:px-5 border
+         border-gray-15 hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full">
         
             <div className="absolute 2xl:p-[6.37px] top-5 right-5">
                 <img src="./assets/icons/Arrow.svg" alt="arrow-icon" width={21.25} height={21.25} className="" />
