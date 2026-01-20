@@ -25,8 +25,6 @@ export interface FooterProps {
     copyright : string
     terms : string
     socialMedia : SocialMedia[]
-  
-    
 }
 
 export interface FooterInterface {

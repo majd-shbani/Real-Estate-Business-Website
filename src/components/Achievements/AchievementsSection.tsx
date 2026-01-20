@@ -16,7 +16,7 @@ const AchievementsSection = () => {
   return (
     <div className="bg-[#141414] px-4 xl:px-20 2xl:px-40.5 pb-15 xl:pb-22.5 2xl:pb-28">
 
-      <Section title="Achievements" 
+      <SectionHeader title="Achievements" 
       description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary." 
       buttonText="fhtyh"
       />
