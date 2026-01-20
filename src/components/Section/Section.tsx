@@ -25,8 +25,7 @@ const Section = ({
                 title={title}
                 description={description}
                 buttonText={buttonText}
-                to={to} 
-                className={className}
+                to={to}
 
             />
             {children}
