@@ -27,6 +27,6 @@ export interface FooterProps {
     socialMedia : SocialMedia[]
 }
 
-export interface Footer {
+export interface FooterInterface {
     footerProps : FooterProps
 }

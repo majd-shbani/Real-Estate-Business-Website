@@ -1,7 +1,7 @@
 
 import Button from '../Button/Button';
 
-interface SectionHeaderProps {
+export interface SectionHeaderProps {
     title: string;
     description: string;
     buttonText?: string;
