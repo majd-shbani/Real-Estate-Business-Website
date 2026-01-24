@@ -1,5 +1,7 @@
+
 import Button from "../Button/Button"
-import HeroCards from "../HeroCards/HeroCards"
+import FeaturesList from "../FeaturesCard/FeaturesList"
+
 import StatisticeSection from "../StatisticeSection/StatisticeSection"
 import Title from "../Title/Title"
 
@@ -45,7 +47,7 @@ const HeroHome = () => {
                 </div>
 
             </div>
-            <HeroCards/> 
+            <FeaturesList/>
         </header>
     )
 }
