@@ -1,9 +1,10 @@
 
 
+
 const Properties = () => {
     return (
         <div>
-            
+         
         </div>
     )
 }
