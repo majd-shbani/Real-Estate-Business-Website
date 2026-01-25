@@ -32,7 +32,7 @@ const PropertyKeyFeatures = () => {
 
       <div className="p-5 xl:p-10 2xl:p-12.5 border border-gray-15 rounded-xl lg:w-[49%]">
 
-        <h2 className="text-white font-semibold mb-5 text-[18px] xl:text-[20px] xl:mb-10 2xl:text-[24px] 2xl:mb-12.5">{propertyKeyFeatures.keyFeatures.title}</h2>
+        <h2 className=" font-semibold mb-5 text-[18px] xl:text-[20px] xl:mb-10 2xl:text-[24px] 2xl:mb-12.5">{propertyKeyFeatures.keyFeatures.title}</h2>
         <div className="flex flex-col gap-4.5 xl:gap-5 2xl:gap-7.5 ">
           {propertyKeyFeatures.keyFeatures.features.map((item) => {
             return (
