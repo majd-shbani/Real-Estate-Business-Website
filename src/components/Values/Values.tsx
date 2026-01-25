@@ -44,6 +44,7 @@ const Values = () => {
                    title="Our Values"
                    description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
                    className="text-left pl-0! pr-0! mb-0! " 
+                 
                 />
             </div>
 
