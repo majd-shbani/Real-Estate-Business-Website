@@ -8,9 +8,9 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
       const [activeIndex, setActiveIndex] = useState(0);
 
       return (
-            <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]">
-                  {/* 1. Header Section */}
+            <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] pt-51.5 2xl:pt-78 mb-5 2xl:mb-7.5">
 
+                  {/* 1. Header Section */}
                   <div className="flex flex-col gap-2.5 xl:flex-row xl:gap-5 xl:items-center mb-7.5 xl:mb-10 2xl:mb-12.5">
                         <h2 className="text-[20px] xl:text-[24px] 2xl:text-[30px] font-semibold text-nowrap">{property.title}</h2>
                         <div className="flex justify-between items-center flex-wrap gap-2.5 w-full">
@@ -28,7 +28,6 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
                   {/* 2. Image Gallery Section */}
                   <div className="bg-gray-400 dark:bg-gray-15 p-5 xl:p-10 2xl:p-12.5 border border-gray-15 rounded-xl">
                         <div className="flex flex-col-reverse md:flex-col ">
-                              {/* Thumbnails */}
                               <div className="flex w-full mb-7.5 gap-2 overflow-x-auto p-5 custom-scrollbar bg-gray-08 rounded-xl border border-gray-15">
                                     {property.images.map((img, index) => (
                                           <button

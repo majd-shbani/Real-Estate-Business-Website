@@ -10,7 +10,6 @@ export interface PropertyDetails {
       location: string;
       price: number;
       images: PropertyImage[];
-      description: string;
 }
 
 export interface PropsDetails {
