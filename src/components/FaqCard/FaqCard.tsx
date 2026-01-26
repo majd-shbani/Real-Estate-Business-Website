@@ -6,7 +6,7 @@ import Button from "../Button/Button"
 
 const FaqCard = ({card}: FaqCardProps) => {
   return (
-    <BaseCard className="text-white grid grid-rows-subgrid row-span-3 gap-5 xl:gap-6 2xl:gap-7.5">
+    <BaseCard className="grid grid-rows-subgrid row-span-3 gap-5 xl:gap-6 2xl:gap-7.5 mx-auto xl:mx-0 max-w-112.5 md:max-w-full">
         <h3 className="text-lg xl:text-xl 2xl:text-2xl leading-[150%] font-semibold">{card.title}</h3>
         <p className="text-sm xl:text-base 2xl:text-lg leading-[150%] text-gray-60 font-medium">{card.subTitle}</p>
         <div>

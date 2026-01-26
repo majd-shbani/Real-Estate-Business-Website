@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import Nav from "../components/Nav/Nav"
+
 import StartJourney from "../components/StartJourney/StartJourney"
 
 import { journeyProps } from "../data/JourneyStart/StartJourney"
@@ -9,15 +9,17 @@ import Footer from "../components/Footer/Footer"
 
 
 
+
 const Root = () => {
     return (
         <div>
-            <Nav />
+        
             <Outlet />
             <StartJourney journeyProps={journeyProps} />
             <Footer footerProps={footerProps} />
         </div>
     )
 }
+
 
 export default Root

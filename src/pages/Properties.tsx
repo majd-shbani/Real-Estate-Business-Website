@@ -1,6 +1,5 @@
 
 
-
 const Properties = () => {
     return (
         <div>
