@@ -69,4 +69,3 @@ const Footer = (footerProps : FooterInterface) => {
 
 export default Footer
 
-
