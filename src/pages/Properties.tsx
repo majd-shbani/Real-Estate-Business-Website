@@ -1,16 +1,20 @@
-import  PropertyKeyFeatures from "../components/PropertyKeyFeatures/PropertyKeyFeatures"
-import { propertyKeyData } from "../data/PropertyKeyFeatures/PropertyKeyFeatures"
+import HeroProperties from "../components/HeroProperties/HeroProperties"
+import PropertyBookingSection from "../components/PropertyBookingSection/PropertyBookingSection"
 
 
 
 
 
-const Properties = () => {
+
+
+const PropertyDetails = () => {
     return (
         <div>
-          <PropertyKeyFeatures card={propertyKeyData} />
+            <HeroProperties/>
+            <PropertyBookingSection/>
         </div>
     )
 }
 
-export default Properties
+export default PropertyDetails
+

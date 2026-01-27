@@ -7,7 +7,7 @@ const ServicePropertyCard = ({ id, title, description, image, className } : Serv
   return (
     
 
-   <div key={id} className={` border border-gray-15 rounded-xl p-6   h-43.75 xl:p-10 xl:h-58 2xl:p-12.5 w-full 2xl:h-66.5
+   <div key={id} className={`w-full  sm:max-w-112.5 xl:max-w-103.25 2xl:max-w-lg border border-gray-15 rounded-xl p-6 xl:p-10 2xl:p-12.5  
    ${className || ''}`}
     >
 

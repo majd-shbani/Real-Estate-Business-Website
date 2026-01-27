@@ -4,7 +4,7 @@ import type { ServicePropertyCardProps } from "../../interfaces/ServicePropertyC
 export const ServiceInvestmentsHeaderData : SectionHeaderProps = {
    title : "Smart Investments, Informed Decisions" ,
    description : "Building a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service empowers you to make smart investments and informed decisions.",
-   className : "  bg-red-100  "
+   className : " lg:h-full h-43.75 xl:h-58 2xl:h-66.5  "
 }
 
 export const ServiveInvestmentsCardsData : ServicePropertyCardProps[] = [
