@@ -13,12 +13,10 @@ import TestimonialSection from "../components/TestimonialSection/TestimonialSect
 const Home = () => {
     return (
         <div>
-
             <HeroHome />
             <FeaturedSection />
             <TestimonialSection />
             <FaqSection />
-          
         </div>
     )
 }
