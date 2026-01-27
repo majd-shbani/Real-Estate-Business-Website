@@ -6,7 +6,7 @@ const UnblockCard = ({ card }: UnblockCardProps) => {
       return (
             <BaseCard className={`p-6! xl:p-10! 2xl:p-12.5! bg-gray-15 bg-[url('assets/images/Unblock-Background.png')] bg-center border border-gray-15 flex flex-col gap-4 leading-[150%]`}>
 
-                  <div className="flex flex-col xl:flex-row justify-between items-start gap-4  ">
+                  <div className="flex flex-col xl:flex-row justify-between items-center gap-4  ">
                         <h2 className={`text-[20px] ${card.variant === 'horizontal' ? 'xl:text-[24px] 2xl:text-[30px] font-bold ' : 'xl:text-[22px] 2xl:text-[24px] font-semibold'}`}>
                               {card.title}
                         </h2>
