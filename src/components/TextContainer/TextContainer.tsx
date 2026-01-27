@@ -19,7 +19,7 @@ const TextContainer = ({
         ${fullWidth ? "col-span-2 sm:col-span-1" : ""}
       `}
     >
-      <h3 className="mb-0.5 text-white text-2xl font-bold">
+      <h3 className="mb-0.5 text-2xl font-bold">
         {heading}
       </h3>
       <span className="text-gray-60 text-sm font-medium">
