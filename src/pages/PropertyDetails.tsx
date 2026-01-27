@@ -9,7 +9,7 @@ import PropertyKeyFeatures from "../components/PropertyKeyFeatures/PropertyKeyFe
 const PropertyDetails = () => {
     return (
         <div>
-            <PropertyKeyFeatures/>
+            <PropertyKeyFeatures />
             <PricingSection title="Listing Price" price="1,250,000" /> 
             <FaqSection />
         </div>
