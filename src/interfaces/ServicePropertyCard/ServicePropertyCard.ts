@@ -5,3 +5,5 @@ export interface ServicePropertyCardProps {
   image: string
   className? : string 
 }
+
+
