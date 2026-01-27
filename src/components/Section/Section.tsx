@@ -28,7 +28,6 @@ const Section = ({
                 description={description}
                 buttonText={buttonText}
                 to={to}
-                showStars={showStars}
             />
             {children}
         </section>
