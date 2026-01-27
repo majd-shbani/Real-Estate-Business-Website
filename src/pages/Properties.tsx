@@ -1,12 +1,17 @@
-import FaqSection from "../components/FaqSection/FaqSection"
-import PricingSection from "../components/PricingSection/PricingSection"
+import HeroProperties from "../components/HeroProperties/HeroProperties"
+import PropertyBookingSection from "../components/PropertyBookingSection/PropertyBookingSection"
+
+
+
+
+
 
 
 const PropertyDetails = () => {
     return (
         <div>
-            <PricingSection title="Listing Price" price="1,250,000" /> 
-            <FaqSection />
+            <HeroProperties/>
+            <PropertyBookingSection/>
         </div>
     )
 }
