@@ -10,6 +10,7 @@ const Contact = () => {
             <Connect/>
             <ExploreWorldSection images={explorCardData}/>
             <DiscoverOurOfficeLocations filters={["All", "Regional", "International"]}/>
+            <ExploreWorldSection images={explorCardData}/>
         </div>
     )
 }
