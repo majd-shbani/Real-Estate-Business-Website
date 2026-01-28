@@ -1,11 +1,20 @@
+import HeroProperties from "../components/HeroProperties/HeroProperties"
+import PropertyBookingSection from "../components/PropertyBookingSection/PropertyBookingSection"
 
 
-const Properties = () => {
+
+
+
+
+
+const PropertyDetails = () => {
     return (
         <div>
-            
+            <HeroProperties/>
+            <PropertyBookingSection/>
         </div>
     )
 }
 
-export default Properties
+export default PropertyDetails
+

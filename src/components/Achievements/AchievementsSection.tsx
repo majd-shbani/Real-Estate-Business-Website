@@ -5,11 +5,6 @@ import  Achievement from "./Achievement"
 
 
 
-
-
-
-
-
 const AchievementsSection = () => {
   return (
     <div className=" ">
