@@ -5,6 +5,7 @@ import PropertyKeyFeatures from "../components/PropertyKeyFeatures/PropertyKeyFe
 
 
 
+
 const PropertyDetails = () => {
     return (
         <div>
