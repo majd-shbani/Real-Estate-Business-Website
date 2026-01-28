@@ -6,11 +6,11 @@ import PropertyBookingSection from "../components/PropertyBookingSection/Propert
 
 
 
-
 const PropertyDetails = () => {
     return (
         <div>
-            <HeroProperties/>
+          
+            <HeroProperties  />
             <PropertyBookingSection/>
         </div>
     )
