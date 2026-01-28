@@ -5,8 +5,8 @@ const EmployeeCard = ({card}: EmployeeCardProps) => {
   return (
     <BaseCard className="p-5! md:p-7! xl:p-6! 2xl:p-7.5! flex flex-col w-full max-w-112.5 md:max-w-full mx-auto md:mx-0">
         <div className="relative mb-10 xl:mb-12.5 flex justify-center items-center">
-            <div className="rounded-[10px] 2xl:rounded-xl w-full xl:w-full">
-                <img src={card.image} alt={card.name} width={316.75} height={253} className="object-fill w-full h-67 sm:h-auto xl:h-[15.27777vw] 2xl:h-full" />
+            <div className="w-full">
+                <img src={card.image} alt={card.name} width={316.75} height={253} className="object-fill w-full h-67 sm:h-auto xl:h-[15.27777vw] 2xl:h-[13.177083vw] rounded-[10px] 2xl:rounded-xl" />
             </div>
             <div className="absolute -bottom-4.5 2xl:-bottom-6.5 rounded-[43px] px-[clamp(1.25rem,1.25vw+0.125rem,1.625rem)] py-[clamp(0.625rem,0.833vw-0.125rem,0.875rem)] bg-purple-60 flex justify-center items-center">
                 <img src={EMPLOYEE_CARD_DEFAULTS.twitterIcon} alt="twitter-icon" width={24} height={24} className="w-5 2xl:w-full"/>

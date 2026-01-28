@@ -10,27 +10,27 @@ export const ServiceInvestmentsHeaderData : SectionHeaderProps = {
 export const ServiveInvestmentsCardsData : ServicePropertyCardProps[] = [
     {
         id : 1 ,
-        image : "./assets/images/Icon Container (1).webp",
+        image : "./assets/icons/Icon Container.svg",
         title : "Market Insight" ,
         description : "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions"
     }
     ,
       {
         id : 2 ,
-        image : "./assets/images/Icon Container (2).webp",
+        image : "./assets/icons/Icon Container (1).svg",
         title : "ROI Assessment" ,
         description : "Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments"
     }
     ,
       {
         id : 3 ,
-        image : "./assets/images/Icon Container (3).webp",
+        image : "./assets/icons/Icon Container (2).svg",
         title : "Customized Strategies" ,
         description : "Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs"
       },
       {
         id : 4 ,
-        image : "./assets/images/Icon Container (4).webp",
+        image : "./assets/icons/Icon Container (3).svg",
         title : "Diversification Mastery" ,
         description : "Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations"
     }
