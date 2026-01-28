@@ -5,14 +5,18 @@ import NavigationSection from "../components/NavigationSection/NavigationSection
 import OurTeamSection from "../components/OurTeamSection/OurTeamSection"
 import ValuedClientSection from "../components/ValuedClientSection/ValuedClientSection"
 import Values from "../components/Values/Values"
+import SliderMovement from "../components/SliderMovement/SliderMovement"
+
+
 
 const AboutUs = () => {
     return (
-        <div className=""> 
+        <div> 
             <HeroAbout img="/Real-Estate-Business-Website/assets/images/heroAbout.webp" alt="Hero Image About Page"/> 
             <Values />
             <AchievementsSection />
             <NavigationSection/>
+            <SliderMovement/>
             <OurTeamSection/>
             <ValuedClientSection/>
         </div>

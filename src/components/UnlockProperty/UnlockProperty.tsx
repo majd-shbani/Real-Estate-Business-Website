@@ -8,7 +8,7 @@ const UnlockProperty = () => {
     return (
         <Section title="Unlock Property Value"
                 description={`Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey`}>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7.5 lg:gap-x-5 lg:gap-y-10 ">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 2xl:gap-7.5 ">
                         {UnblockInformations.map((information) => {
                             return(
                                 <ServicePropertyCard

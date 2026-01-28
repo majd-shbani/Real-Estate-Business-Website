@@ -20,3 +20,7 @@ export interface PropertyKeyFeaturesProps {
    propertyRooms: NumberOfRooms[]
    keyFeatures: KeyFeatures
 }
+
+export interface PropertyKeyFeatures {
+   card : PropertyKeyFeaturesProps
+}
