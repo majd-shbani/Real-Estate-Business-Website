@@ -88,9 +88,7 @@ const routes = createBrowserRouter([
       element: <EmployeeForm />
     },
   ]}
-],{
-  basename:"/Real-Estate-Business-Website/",
-}
+]
 )
 
 createRoot(document.getElementById('root')!).render(
