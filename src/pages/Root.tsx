@@ -16,7 +16,7 @@ const Root : React.FC = () => {
     }
     return (
         <div className={`${status? "text-white bg-gray-08" : "bg-white text-gray-08"}`}>
-            <Nav status={status} toggleMood={editStatusHandle} />
+            <Nav status={status} toggleMood={editStatusHandle} /> 
             <Outlet/>
             <StartJourney journeyProps={journeyProps} />
             <Footer footerProps={footerProps} />
