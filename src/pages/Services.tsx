@@ -1,5 +1,6 @@
 
 
+
 import EffortlessProperty from "../components/EffortlessProperty/EffortlessProperty"
 import UnlockProperty from "../components/UnlockProperty/UnlockProperty"
 
