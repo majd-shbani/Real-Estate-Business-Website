@@ -15,3 +15,33 @@ export const Links = [
         href: "/dashboard/employees"
     }
 ]
+
+export const EmployeeFormInputs = [
+    {
+        id: 1,
+        name: "name",
+        label: "Full Name",
+        placeholder: "Full Name",
+        type: "text",
+        value: "",
+        onChange: () => {},
+    },
+    {
+        id: 2,
+        name: "position",
+        label: "Position",
+        placeholder: "Position",
+        type: "text",
+        value: "",
+        onChange: () => {},
+    },
+    {
+        id: 3,
+        name: "image",
+        label: "Image URL",
+        placeholder: "e.g. https://example.com/photo.jpg",
+        type: "text",
+        value: "",
+        onChange: () => {},
+    }
+]

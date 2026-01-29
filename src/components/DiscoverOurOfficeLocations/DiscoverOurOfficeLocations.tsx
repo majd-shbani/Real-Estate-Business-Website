@@ -7,7 +7,7 @@ const DiscoverOurOfficeLocations = ({filters} : {filters: Array<string>}) => {
     const [selectedType, setSelectedType] = useState("All");
     const [active, setActive] = useState("All")
     return (
-        <div className="my-20 xl:my-30 2xl:my-[150px]">
+        <div className="mb-20 xl:mb-30 2xl:mb-[150px]">
             <Section title="Discover Our Office Locations" description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you">
                 <div className="max-w-129 mb-[30px] xl:mb-10 2xl:mb-[50px] p-2.5 rounded-lg 2xl:rounded-xl bg-gray-10 flex flex-wrap xl:flex-nowrap gap-2.5 items-center text-[clamp(12px,3vw,14px)] 2xl:text-lg font-semibold text-center">
                     {filters?.map((filter, index) => {

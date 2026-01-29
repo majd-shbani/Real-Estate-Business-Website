@@ -14,7 +14,7 @@ const Dashboard = ({links}: DashboardProps) => {
     const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div className="grid grid-cols-12 min-h-screen">
+    <div className="grid grid-cols-12 h-screen">
         <header className="md:hidden fixed top-0 left-0 right-0 bg-gray-15 p-4 flex items-center justify-between z-50">
             <div className="max-w-20">
                 <img src={DEFAULT_DATA.logo} alt="logo" className="w-full h-auto"/>
@@ -52,7 +52,7 @@ const Dashboard = ({links}: DashboardProps) => {
                     ))}
                 </ul>
             </nav>
-            <Button text={DEFAULT_DATA.button} to="/" className="w-full bg-purple-60 text-white border-0 text-base! xl:text-lg! 2xl:text-2xl! transition-all duration-200 ease-out hover:scale-110"/>
+            <Button text={DEFAULT_DATA.button} to="/" className="w-full bg-purple-60 text-white border-0 text-sm xl:text-lg! 2xl:text-2xl! transition-all duration-200 ease-out hover:scale-110"/>
         </aside>
         {isMenuOpen && (
             <div 
@@ -60,7 +60,7 @@ const Dashboard = ({links}: DashboardProps) => {
                 onClick={closeMenu}
             />
         )}
-        <main className="bg-gray-08 col-span-12 md:col-span-9 lg:col-span-10 px-[4.16666vw] xl:py-7.5 2xl:py-10">
+        <main className="bg-gray-08 col-span-12 md:col-span-9 lg:col-span-10 p-[4.16666vw] pt-28 md:pt-[4.16666vw] xl:py-7.5 2xl:py-10">
             <Outlet />
         </main>
     </div>

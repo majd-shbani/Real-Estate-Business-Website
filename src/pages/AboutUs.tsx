@@ -6,10 +6,14 @@ import OurTeamSection from "../components/OurTeamSection/OurTeamSection"
 import ValuedClientSection from "../components/ValuedClientSection/ValuedClientSection"
 import Values from "../components/Values/Values"
 
+
+
+
+
 const AboutUs = () => {
     return (
-        <div className=""> 
-            <HeroAbout img="/Real-Estate-Business-Website/assets/images/heroAbout.webp" alt="Hero Image About Page"/> 
+        <div> 
+            <HeroAbout img="assets/images/heroAbout.webp" alt="Hero Image About Page"/> 
             <Values />
             <AchievementsSection />
             <NavigationSection/>

@@ -1,3 +1,5 @@
+import type { ChangeEvent } from "react";
+
 export interface FormInputProps {
     input: {
         id: number;
@@ -9,8 +11,14 @@ export interface FormInputProps {
         icon?: string;
         alt?: string;
         options?: string[];
+        value?: string | number;
+        defaultValue?: string | number;
+        onChange?: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
+        className?: string;
+        disabled?: boolean;
     }
     isActive?: boolean;
     showAction?: boolean;  
     onActionClick?: () => void;
+    className?: string;
 }
