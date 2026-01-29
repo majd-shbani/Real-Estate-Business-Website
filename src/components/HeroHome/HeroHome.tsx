@@ -8,7 +8,7 @@ const HeroHome = () => {
     return (
         <header className="pt-36 xl:pt-0 my-10 xl:my-[98px] 2xl:my-36">
             <div className="pl-0 xl:pl-[5.55555vw] 2xl:pl-[8.4375vw] xl:pt-7 2xl:pt-5 flex flex-col-reverse xl:flex-row xl:flex-wrap xl:items-center xl:justify-between">
-                <div className="px-4 lg:px-[7.8125vw] xl:px-0 xl:w-[47.9166vw]">
+                <div className="xl:w-[39.4791vw] px-4 lg:px-[7.8125vw] xl:px-0">
                     <Title
                         title="Discover Your Dream Property with Estatein"
                         description="Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams."
@@ -22,7 +22,7 @@ const HeroHome = () => {
                     <StatisticeSection className="[&>div]:p-4 [&>div]:xl:py-3.5 [&>div]:xl:px-5 [&>div]:2xl:py-4 [&>div]:2xl:px-6"/>
                 </div>
 
-                <div className=" pr-4 xl:pr-0 mx-auto xl:mx-0 mb-22 xl:mb-0 flex flex-col-reverse relative max-w-[100vw] xl:max-w-[37.9166vw]">
+                <div className=" px-4 xl:px-0 mx-auto xl:mx-0 mb-22 xl:mb-0 flex flex-col-reverse relative max-w-[100vw] xl:w-[47.9166vw]">
                     <div className="absolute top-full xl:top-[40%] left-0 xl:-left-15 -translate-y-15 xl:-translate-y-full bg-gray-08  border border-solid border-gray-15 w-[117px] h-[117px] md:w-[129px] 2xl:w-[140px] md:h-[129px] 2xl:h-[140px] rounded-full  flex justify-center items-center">
                         
                         {/* الصورة الخلفية */}
