@@ -8,7 +8,7 @@ const HeroHome = () => {
     return (
         <header className="pt-36 xl:pt-0 my-10 xl:my-[98px] 2xl:my-36">
             <div className="pl-0 xl:pl-[5.55555vw] 2xl:pl-[8.4375vw] xl:pt-7 2xl:pt-5 flex flex-col-reverse xl:flex-row xl:flex-wrap xl:items-center xl:justify-between">
-                <div className="xl:w-[39.4791vw] px-4 lg:px-[7.8125vw] xl:px-0">
+                <div className="xl:w-[42.3611vw] 2xl:w-[39.4791vw] px-4 lg:px-[7.8125vw] xl:px-0">
                     <Title
                         title="Discover Your Dream Property with Estatein"
                         description="Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams."
@@ -19,7 +19,7 @@ const HeroHome = () => {
                         <Button to="Properties" className="w-full mb-10 bg-purple-60 md:w-fit md:mr-4 md:mb-12.5 2xl:mr-5 2xl:mb-15" text="Browse Properties"></Button>
                     </div>
 
-                    <StatisticeSection className="[&>div]:p-4 [&>div]:xl:py-3.5 [&>div]:xl:px-5 [&>div]:2xl:py-4 [&>div]:2xl:px-6"/>
+                    <StatisticeSection className="mb-10 xl:mb-0 [&>div]:p-4 [&>div]:xl:py-3.5 [&>div]:xl:px-5 [&>div]:2xl:py-4 [&>div]:2xl:px-6"/>
                 </div>
 
                 <div className=" px-4 xl:px-0 mx-auto xl:mx-0 mb-22 xl:mb-0 flex flex-col-reverse relative max-w-[100vw] xl:w-[47.9166vw]">
