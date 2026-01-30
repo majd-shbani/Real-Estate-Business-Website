@@ -29,7 +29,7 @@ const Values = () => {
     ];
 
     return (
-        <div className="flex flex-col lg:flex-row items-center w-full
+        <div className="flex flex-col xl:flex-row items-center w-full
             gap-5 lg:gap-20 2xl:gap-20
             px-4 lg:px-20 2xl:px-40.5
             py-12.5 2xl:py-15"> 
