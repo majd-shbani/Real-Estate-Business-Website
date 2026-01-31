@@ -22,7 +22,7 @@ const Connect = () => {
                     description="We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need."
                     className="p-0! m-0!"
                     />
-            <FormContainer formRef={formRef} onSubmit={handleSubmit}>
+            <FormContainer formRef={formRef} onSubmit={handleSubmit} className="p-5! xl:p-20! 2xl:p-25!">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 2xl:gap-7.5">
                     {ContactFormFields.map((field) => (
                     <div
