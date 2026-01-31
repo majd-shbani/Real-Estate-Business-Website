@@ -16,6 +16,7 @@ export interface FormInputProps {
         onChange?: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
         className?: string;
         disabled?: boolean;
+        autoComplete?: string;
     }
     isActive?: boolean;
     showAction?: boolean;  
