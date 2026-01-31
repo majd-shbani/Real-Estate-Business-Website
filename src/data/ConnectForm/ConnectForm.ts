@@ -1,0 +1,53 @@
+export const ContactFormFields = [
+    {
+        id: 1,
+        label: "First Name",
+        name: "firstName",
+        placeholder: "Enter First Name",
+        type: "text",
+    },
+    {
+        id: 2,
+        label: "Last Name",
+        name: "lastName",
+        placeholder: "Enter Last Name",
+        type: "text",
+    },
+    {
+        id: 3,
+        label: "Email",
+        name: "email",
+        placeholder: "Enter your Email",
+        type: "email",
+    },
+    {
+        id: 4,
+        label: "Phone",
+        name: "phone",
+        placeholder: "Enter Phone Number",
+        type: "tel",
+    },
+    {
+        id: 5,
+        label: "Inquiry Type",
+        name: "inquiryType",
+        placeholder: "Select Inquiry Type",
+        type: "select",
+        options: ["General", "Sales", "Support"],
+    },
+    {
+        id: 6,
+        label: "How Did You Hear About Us?",
+        name: "source",
+        placeholder: "Select",
+        type: "select",
+        options: ["Google", "Social Media", "Friend"],
+    },
+    {
+        id: 7,
+        label: "Message",
+        name: "message",
+        placeholder: "Enter your Message here...",
+        type: "textarea",
+    },
+];

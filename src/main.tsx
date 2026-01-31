@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './pages/Root'
 import Home from './pages/Home'
@@ -16,7 +18,6 @@ import ListEmployees from './pages/Dashboard/Employees/ListEmployees'
 import ViewRealEstate from './pages/Dashboard/RealEstate/ViewRealEstate'
 import RealEstateForm from './pages/Dashboard/RealEstate/RealEstateForm'
 import EmployeeForm from './pages/Dashboard/Employees/EmployeeForm'
-import ViewEmployee from './pages/Dashboard/Employees/ViewEmployee'
 
 
 
@@ -78,21 +79,17 @@ const routes = createBrowserRouter([
       element: <EmployeeForm />
     },
     {
-      path: "employees/:id",
-      element: <ViewEmployee />
-    },
-    {
       path: "employees/:id/edit",
       element: <EmployeeForm />
     },
   ]}
-],{
-  basename:"/Real-Estate-Business-Website/",
-}
+]
 )
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode >
+    <Provider store={store}>
       <RouterProvider router={routes}/>
+    </Provider>
   </StrictMode>,
 )
