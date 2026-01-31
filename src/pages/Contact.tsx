@@ -1,3 +1,4 @@
+import Connect from "../components/Connect/Connect"
 import DiscoverOurOfficeLocations from "../components/DiscoverOurOfficeLocations/DiscoverOurOfficeLocations"
 import ExploreWorldSection from "../components/ExploreWorldSection/ExploreWorldSection"
 import HeroContact from "../components/HeroContact/HeroContact"

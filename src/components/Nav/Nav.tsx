@@ -48,11 +48,11 @@ const Nav : React.FC<NavProps> = ({ status , toggleMood }) => {
                 </ul>
                 <div className="hidden xl:flex items-center gap-2">
                     <NavLink to={"/contact"}>
-                        <Button text="Contact Us" className="text-white bg-gray-08 px-5! 2xl:px-6! py-3! 2xl:py-3.5!"/>
+                        <Button text="Contact Us" className="text-white bg-gray-08 py-3! 2xl:py-3.5!"/>
                     </NavLink>
-                    <div className={`flex items-center gap-4 py-3 px-3 rounded-[29px] dark:bg-white  bg-gray-08`}>
-                        <PiSunDimBold className={`w-4 h-4 cursor-pointer rounded-full bg-gray-08 dark:text-gray-08 text-white `} onClick={toggleMood}/> 
-                        <HiOutlineMoon className={`w-4 h-4 cursor-pointer rounded-full bg-white dark:text-gray-08 text-white `} onClick={toggleMood} /> 
+                    <div className={`flex items-center gap-4 p-3  2xl:p-3.5 rounded-[29px] dark:bg-white  bg-gray-08`}>
+                        <PiSunDimBold className={`w-4 h-4 2xl:w-5 2xl:h-5 cursor-pointer rounded-full bg-gray-08 dark:text-gray-08 text-white `} onClick={toggleMood}/> 
+                        <HiOutlineMoon className={`w-4 h-4 2xl:w-5 2xl:h-5 cursor-pointer rounded-full bg-white dark:text-gray-08 text-white `} onClick={toggleMood} /> 
                     </div>
                 </div>
 
@@ -63,11 +63,11 @@ const Nav : React.FC<NavProps> = ({ status , toggleMood }) => {
                     <ul className={`${show ? "top-36.5" : "-top-300"} ${status? "" : "bg-[#9578a8]"} absolute z-50 w-full h-[calc(100vh-100px)] right-0 flex flex-col justify-center items-center gap-2 p-1 xl:hidden backdrop-blur-3xl transition-all`}>
                         <NavItems items={navItemsData}/>
                         <NavLink to={"/contact"}>
-                            <Button text="Contact Us" className="text-white bg-gray-08 text-base!"/>
+                            <Button text="Contact Us" className="text-white bg-gray-08 text-base! font-medium! px-5! py-3! "/>
                         </NavLink>
-                        <div className={`flex mt-2 items-center gap-4 py-2 px-4 rounded-[29px] `}>
-                            <PiSunDimBold className={`w-4 h-4 cursor-pointer rounded-full bg-gray-08 `} onClick={toggleMood}/> 
-                            <HiOutlineMoon className={`w-4 h-4 cursor-pointer rounded-full bg-white `} onClick={toggleMood} /> 
+                        <div className={`flex mt-2 items-center gap-4 py-2 px-4 rounded-[29px] dark:bg-white  bg-gray-08`}>
+                            <PiSunDimBold className={`w-4 h-4 cursor-pointer rounded-full bg-gray-08 dark:text-gray-08 text-white`} onClick={toggleMood}/> 
+                            <HiOutlineMoon className={`w-4 h-4 cursor-pointer rounded-full bg-white dark:text-gray-08 text-white `} onClick={toggleMood} /> 
                         </div>
                     </ul>
             </div>
