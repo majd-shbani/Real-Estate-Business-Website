@@ -12,7 +12,7 @@ export interface SectionHeaderProps {
 const SectionHeader = ({ title, description, buttonText, to, className, showStars = true }: SectionHeaderProps) => {
   
     return (
-        <div className={`w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-6 lg:gap-37.5 xl:gap-50 font-urbanist mb-10 xl:mb-15 2xl:mb-20 ${className || ""}`}>
+        <div className={`w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-6 lg:gap-37.5 xl:gap-50 font-urbanist ${className || ""}`}>
             <div className="flex flex-col flex-1 gap-4">
                {showStars &&  <div className="flex gap-1 mb-1 -ms-2 lg:-ms-5">
                     <img src="./assets/icons/SectionIcon-1.svg" className='opacity-100' alt="SectionIcon-1" />
@@ -20,7 +20,7 @@ const SectionHeader = ({ title, description, buttonText, to, className, showStar
                     <img src="./assets/icons/SectionIcon-3.svg" className='opacity-40' alt="SectionIcon-3" />
                 </div>}
                 <div>
-                    <h2 className="text-[28px] lg:text-[38px] 2xl:text-5xl font-semibold   mb-1.5 lg:mb-2.5 2xl:mb-3.5 leading-[150%] ">
+                    <h2 className="text-[28px] lg:text-[38px] 2xl:text-5xl font-semibold   mb-2.5 lg:mb-2.5 2xl:mb-3.5 leading-[150%] ">
                         {title}
                     </h2>
                     <p className=" text-sm lg:text-base  2xl:text-lg leading-[150%] font-medium">

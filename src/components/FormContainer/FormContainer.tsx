@@ -3,9 +3,11 @@ import type { FormProps } from "../../interfaces/FormContainer/FormContainer"
 import BaseCard from "../BaseCard/BaseCard"
 import Button from "../Button/Button"
 
-const FormContainer = ({children, formRef, onSubmit}: FormProps) => {
+const FormContainer = ({children, formRef, onSubmit, className}: FormProps) => {
+  const defaultPadding = "p-5 md:p-[3.472222vw] 2xl:p-[5.208333vw]";
+
   return (
-    <BaseCard className="p-5! md:p-[3.472222vw]! 2xl:p-[5.208333vw]!">
+    <BaseCard className={className || defaultPadding}>
       <form ref={formRef} onSubmit={onSubmit}>
         {children}
         <div className="flex flex-col md:flex-row items-center justify-between gap-5 xl:gap-0 mt-7.5 2xl:mt-12.5">

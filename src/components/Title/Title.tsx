@@ -3,7 +3,7 @@ import type { TitleProps } from "../../interfaces/HeroHome/HeroHome"
 
 const Title = ({ title, description}: TitleProps) => {
     return (
-        <div className="xl:w-[43.4791vw]">
+        <div>
             <h1 className="text-[28px] xl:text-[40px] 2xl:text-6xl 2xl:mb-6 font-semibold leading-[1.2] mb-4">
                 {title}
             </h1>
