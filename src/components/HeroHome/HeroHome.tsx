@@ -27,7 +27,9 @@ const HeroHome = () => {
                         
                         {/* الصورة الخلفية */}
                         <img
+
                             src="/assets/images/herohome/textContainer.webp"
+
                             alt="textContainer img"
                             className="absolute inset-0 m-auto"
                         />
@@ -36,12 +38,15 @@ const HeroHome = () => {
                         <div className="bg-gray-10 w-[53.18px] md:w-[58.63px] 2xl:w-[70px] h-[53.18px] 2xl:h-[70px] md:h-[58.63px] rounded-full flex justify-center items-center z-10">
                             <img
                             src="/assets/images/herohome/arrow.webp"
+
                             alt="arrow icon"
                             />
                         </div>
                     </div>
                     <div className="w-full border border-sloid border-gray-15 rounded-xl xl:rounded-none">
+
                         <img className="w-full" src="/assets/images/herohome/heroImage.webp" alt="hero img"></img>
+
                     </div>
                 </div>
 
