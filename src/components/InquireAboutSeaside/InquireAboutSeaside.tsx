@@ -47,7 +47,7 @@ const InquireAboutSeaside = () => {
                     {InquireAboutSeaSideFormData
                     .filter(item => item.name === "SelectedProperty")
                     .map(input => (
-                        <FormInput key={input.id} input={input} />
+                        <FormInput key={input.id} input={input} className="flex-row-reverse" />
                     ))}
                 </div>
 
