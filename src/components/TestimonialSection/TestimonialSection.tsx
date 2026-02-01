@@ -1,5 +1,6 @@
 import { TestimonialHeaderData, testimonialsData } from "../../data/TestimonialCardData/TestimonialCardData"
 import Section from "../Section/Section"
+import SliderMovement from "../SliderMovement/SliderMovement"
 import TestimonialCard from "../TestimonialCard/TestimonialCard"
 
 const TestimonialSection = () => {
@@ -9,11 +10,12 @@ const TestimonialSection = () => {
       description={TestimonialHeaderData.description}
       buttonText={TestimonialHeaderData.buttonText}
     >
-      <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7.5 sm:gap-5 2xl:gap-7.5'>
-        {testimonialsData.map(card => (
+      <SliderMovement 
+        data={testimonialsData}
+        renderItem={(card) => (
           <TestimonialCard key={card.id} card={card} />
-        ))}
-      </div>
+        )}
+      />
     </Section>
     
   )

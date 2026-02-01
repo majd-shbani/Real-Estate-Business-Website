@@ -15,7 +15,7 @@ const TestimonialCard = ({card}: TestimonialCardProps) => {
           </div>
         </div>
         <div className="flex items-center gap-2.5 2xl:gap-3">
-          <div className="rounded-full 2xl:w-15">
+          <div className="rounded-full max-w-12.5 2xl:max-w-15">
             <img src={card.avatar} alt={card.name} width={60} height={60} className="object-cover w-full h-full" />
           </div>
           <div className="flex flex-col 2xl:gap-0.5">
