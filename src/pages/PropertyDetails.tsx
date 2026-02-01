@@ -11,12 +11,10 @@ import { property } from "../data/PropertyDetailsHeader/PropertyDetailsHeader"
 
 
 
-
-
-
 const PropertyDetails = () => {
     return (
         <div>
+            
             <PropertyDetailsHeader property={property}/>
             <InquireAboutSeaside/>
             <PricingSection title="Listing Price" price="1,250,000" /> 

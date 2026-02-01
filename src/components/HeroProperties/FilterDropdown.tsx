@@ -37,10 +37,10 @@ const FilterDropdown = ({ filter }: FilterDropdownProps) => {
     const Icon = filter.icon;
 
     return (
-        <div ref={dropdownRef} className="flex-1 relative ">
+        <div ref={dropdownRef} className="flex-1 xl:flex relative ">
             <div 
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-gray-08 border border-gray-15 rounded-lg 12 14  px-3.5 py-3   2xl:px-3.5 2xl:py-3 flex items-center justify-between cursor-pointer group hover:border-gray-30 transition-colors"
+                className="bg-gray-08 border border-gray-15 rounded-lg   px-3.5 py-3   2xl:px-3.5 2xl:py-3 flex items-center justify-between cursor-pointer group hover:border-gray-30 transition-colors"
             >
                 <div className="flex items-center gap-2 text-gray-60 group-hover:text-white transition-colors">
                     <Icon />

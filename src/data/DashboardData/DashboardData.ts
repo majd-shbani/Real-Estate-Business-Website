@@ -1,6 +1,6 @@
 export const DEFAULT_DATA = {
-    logo: "assets/icons/Logo.svg",
-    profile: "assets/images/profile.webp",
+    logo: "/assets/icons/Logo.svg",
+    profile: "/assets/images/profile.webp",
     user: "Admin",
     button: "Back To Home"
 }
@@ -25,6 +25,7 @@ export const EmployeeFormInputs = [
         type: "text",
         value: "",
         onChange: () => {},
+        autoComplete: "name"
     },
     {
         id: 2,
@@ -34,6 +35,7 @@ export const EmployeeFormInputs = [
         type: "text",
         value: "",
         onChange: () => {},
+        autoComplete: "organization-title"
     },
     {
         id: 3,
