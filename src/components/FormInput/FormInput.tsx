@@ -13,10 +13,12 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
           {input.type === "select" ? (
             <div className="relative w-full flex items-center">
               <select 
+                id={input.name}
                 name={input.name} required
                 value={input.value}
                 defaultValue={input.defaultValue}
                 onChange={input.onChange}
+                autoComplete={input.autoComplete || "off"}
                 className={`text-sm 2xl:text-lg placeholder:text-gray-40 w-full focus:outline-none bg-transparent text-gray-40 appearance-none pr-8 z-10 cursor-pointer ${input.className}`}
               >
                 <option value="" className="bg-gray-10">{input.placeholder}</option>
@@ -33,15 +35,19 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
             
           ) : input.type === "textarea" ? (
             <textarea name={input.name} placeholder={input.placeholder} 
+              id={input.name}
               value={input.value}
               defaultValue={input.defaultValue}
               onChange={input.onChange}
+              autoComplete={input.autoComplete || "on"}
               className={`h-14.5 xl:h-[6.111111vw] 2xl:h-[6.25vw] placeholder:font-medium placeholder:text-gray-40 placeholder:text-sm placeholder:2xl:text-lg placeholder:leading-5 w-full bg-transparent focus:outline-none resize-none ${input.className}`} />
           ) : (
             <input type={input.type} name={input.name} placeholder={input.placeholder} disabled={isDisabled} required
+              id={input.name}
               value={input.value}
               defaultValue={input.defaultValue}
               onChange={input.onChange}
+              autoComplete={input.autoComplete || "on"}
               className={`text-sm placeholder:font-medium placeholder:text-gray-40 placeholder:text-sm placeholder:2xl:text-lg placeholder:leading-5 w-full bg-transparent focus:outline-none ${input.className}`} />
           )}
           {showAction && (

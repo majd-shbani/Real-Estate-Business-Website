@@ -34,7 +34,7 @@ export const InquireAboutSeaSideFormData = [
         name: "SelectedProperty",
         placeholder: "Seaside Serenity Villa, Malibu, California",
         type: "text",
-        icon: "/Real-Estate-Business-Website/assets/icons/location.webp",
+        icon: "/assets/icons/location.webp",
         alt: "location icon"
     },
     {

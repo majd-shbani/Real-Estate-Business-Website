@@ -2,10 +2,10 @@ import type { FooterProps } from "../../interfaces/Footer/Footer";
 
 
 export let footerProps : FooterProps = {
-    imageIcon : "./assets/images/Symbol.webp" ,
-    imageName : "./assets/images/Estatein.webp" ,
+    imageIcon : "/assets/images/Symbol.webp" ,
+    imageName : "/assets/images/Estatein.webp" ,
     sendEmail : {
-        emailIcon : "./assets/images/Vector(15).webp",
+        emailIcon : "/assets/images/Vector(15).webp",
         placeholder : "Enter Your Email",
         telegramIcon : "./assets/images/Send.webp"
     },

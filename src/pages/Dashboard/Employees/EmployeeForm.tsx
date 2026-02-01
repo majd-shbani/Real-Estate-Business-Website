@@ -123,11 +123,7 @@ const EmployeeForm = () => {
           <FormInput
             key={input.id}
             input={{
-              id: input.id,
-              name: input.name,
-              label: input.label,
-              placeholder: input.placeholder,
-              type: input.type,
+              ...input,
               value: formData[input.name as keyof typeof formData],
               onChange: handleChange,
               className: "text-white text-2xl!",

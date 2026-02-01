@@ -15,12 +15,14 @@ export interface KeyFeatures {
 
 
 export interface PropertyKeyFeaturesProps {
-    title : string
-    description : string
-   propertyRooms: NumberOfRooms[]
-   keyFeatures: KeyFeatures
+      card: {
+            title: string
+            description: string
+            propertyRooms: NumberOfRooms[]
+            keyFeatures: KeyFeatures
+      }
 }
 
-export interface PropertyKeyFeatures {
-   card : PropertyKeyFeaturesProps
-}
+// export interface PropertyKeyFeatures {
+//    card : PropertyKeyFeaturesProps
+// }

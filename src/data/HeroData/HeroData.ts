@@ -1,25 +1,25 @@
 
 export const defaultServices = [
     {
-        icon: "/Real-Estate-Business-Website/assets/images/herohome/homeHero.webp",
+        icon: "/assets/images/herohome/homeHero.webp",
         alt: "home-Icon",
         serviceName: "Find Your Dream Home",
     },
 
     {
-        icon: "/Real-Estate-Business-Website/assets/images/herohome/propertyValue.webp",
+        icon: "/assets/images/herohome/propertyValue.webp",
         alt: "lock-Icon",
         serviceName: "Unlock Property Value",
     },
 
     {
-        icon: "/Real-Estate-Business-Website/assets/images/herohome/propertyManagement.webp",
+        icon: "/assets/images/herohome/propertyManagement.webp",
         alt: "build-Icon",
         serviceName: "Effortless Property Management",
     },
 
     {
-        icon: "/Real-Estate-Business-Website/assets/images/herohome/smartInvestments.webp",
+        icon: "/assets/images/herohome/smartInvestments.webp",
         alt: "sun-Icon",
         serviceName: "Smart Investments, Informed Decisions",
     },

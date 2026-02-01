@@ -16,13 +16,13 @@ const Footer = (footerProps : FooterInterface) => {
        </div>
 
 
-       <form className="flex gap-[7.5px] justify-between 2xl:gap-2.5 border border-gray-15 rounded-lg  h-13  xl:h-13 px-[21.6px] py-[18.5px] mb-12.5 w-89.25 lg:w-max xl:w-76.75 2xl:w-105.75  2xl:h-16.5 2xl:px-[26.5px] 2xl:py-[21.5px]">
+       <form className="flex gap-[7.5px] justify-between 2xl:gap-2.5 border border-gray-15 rounded-lg  h-13  xl:h-13 px-[21.6px] py-[18.5px] mb-12.5 w-89.25 lg:w-max xl:p-3.5 xl:w-76.75  2xl:w-105.75  2xl:h-16.5 2xl:px-[26.5px]  2xl:py-[21.5px]">
          <div className="flex gap-2.5  items-center">
            <img src={footerProps.footerProps.sendEmail.emailIcon}></img>
              <input className=" xl:text-[14px] 2xl:text-[18px]" placeholder={footerProps.footerProps.sendEmail.placeholder}></input>
          </div>
          <button>
-          <img src={footerProps.footerProps.sendEmail.telegramIcon}></img></button>
+          <img className="xl:h-6 xl:w-6" src={footerProps.footerProps.sendEmail.telegramIcon}></img></button>
        </form>
       </div>
 

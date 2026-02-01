@@ -18,7 +18,6 @@ import ListEmployees from './pages/Dashboard/Employees/ListEmployees'
 import ViewRealEstate from './pages/Dashboard/RealEstate/ViewRealEstate'
 import RealEstateForm from './pages/Dashboard/RealEstate/RealEstateForm'
 import EmployeeForm from './pages/Dashboard/Employees/EmployeeForm'
-import ViewEmployee from './pages/Dashboard/Employees/ViewEmployee'
 
 
 
@@ -60,7 +59,7 @@ const routes = createBrowserRouter([
       element: <ListRealEstates />
     },
     {
-      path: "real-estate/:id/create",
+      path: "real-estate/create",
       element: <RealEstateForm />
     },
     {
@@ -78,10 +77,6 @@ const routes = createBrowserRouter([
     {
       path: "employees/create",
       element: <EmployeeForm />
-    },
-    {
-      path: "employees/:id",
-      element: <ViewEmployee />
     },
     {
       path: "employees/:id/edit",
