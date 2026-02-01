@@ -31,5 +31,5 @@ const Root: React.FC = () => {
         </div>
     )
 }
-
+export default Root
 

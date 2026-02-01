@@ -36,7 +36,7 @@ const ServiceInvestments = () => {
                image={card.image}
                title={card.title}
                description={card.description}
-               className=" lg:py-15 bg-[#e7e2e2] dark:bg-gray-08 "
+               className=" lg:py-15 bg-[#ffffff] dark:bg-gray-08 "
               />
               </div>
             )
