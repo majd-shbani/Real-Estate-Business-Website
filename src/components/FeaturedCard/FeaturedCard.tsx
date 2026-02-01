@@ -29,7 +29,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price, cate
                         </p>
 
                         {details && details.length > 0 && (
-                              <div className="flex items-center flex-wrap gap-1.5 2xl:gap-2.5 py-5 xl:py-6 2xl:py-7.5">
+                              <div className="flex items-center flex-wrap gap-1.5 2xl:gap-2.5 pt-6 2xl:pt-7.5">
                                     {details.map((item, index) => (
                                           <div key={index} className="flex items-center gap-1 px-3.5 py-2 border border-gray-15 bg-gray-10 rounded-3xl">
                                                 <img src={item.icon} alt="icon" className="w-5 h-5 2xl:w-6 2xl:h-6"/>
@@ -39,12 +39,12 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price, cate
                               </div>
                         )}
 
-                        <div className={`flex justify-between items-center gap-[1vw] }`}>
+                        <div className={`flex justify-between items-center gap-[1vw]  pt-6 2xl:pt-7.5 }`}>
                               <div>
                                     <p className="text-[14px] 2xl:text-[18px] font-medium text-gray-60">Price</p>
                                     <p className="text-[18px] xl:text-[20px] 2xl:text-[24px] font-semibold">{`$${price}`}</p>
                               </div>
-                              <Button text="View Property Details" to={`/propertyDetails/${id}`} className="bg-purple-60 text-white px-[2.24vw] xl:px-[3.3vw]! 2xl:px-[2.4vw] " />
+                              <Button text="View Property Details" to={`/propertyDetails/${id}`} className=" bg-purple-60 text-white px-[2.24vw] xl:px-[3.3104vw]! 2xl:px-[2.83vw]! " />
                         </div>
                   </div>
             </BaseCard>
