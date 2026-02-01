@@ -10,6 +10,7 @@ const Services = () => {
         <div>
             <UnlockProperty/>
             <EffortlessProperty/>
+          
         </div>
     )
 }

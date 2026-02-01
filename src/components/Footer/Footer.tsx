@@ -8,21 +8,21 @@ const Footer = (footerProps : FooterInterface) => {
   return (
     <div className=" font-urbanist ">
 
-    <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-20 xl:py-20 2xl:h-113.5  2xl:py-25">
-      <div className=" ">
+    <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75">
+      <div >
         <div className="flex 2xl:gap-2.5 gap-[7.25px] mb-5 2xl:mb-7.5">
            <img className="2xl:w-12 2xl:h-12 w-.5 h-8.5" src={footerProps.footerProps.imageIcon}></img>
-           <img className=" xl:w-18 xl:h-3.5 mt-2.5 xl:mb-6 2xl:w-25.25 2xl:h-5 2xl:mt-[14.6px] 2xl:mb-[12.5px]" src={footerProps.footerProps.imageName}></img>
+           <img className="invert dark:invert-0 xl:w-18 xl:h-3.5 mt-2.5 xl:mb-6 2xl:w-25.25 2xl:h-5 2xl:mt-[14.6px] 2xl:mb-[12.5px]" src={footerProps.footerProps.imageName}></img>
        </div>
 
 
-       <form className="flex gap-[7.5px] justify-between 2xl:gap-2.5 border border-gray-15 rounded-lg  h-13  xl:h-13 px-[21.6px] py-[18.5px] mb-12.5 w-89.25 lg:w-max xl:p-3.5 xl:w-76.75  2xl:w-105.75  2xl:h-16.5 2xl:px-[26.5px]  2xl:py-[21.5px]">
+       <form className="w-full flex gap-[7.5px] justify-between 2xl:gap-2.5 border border-gray-15 rounded-lg  h-13 py-auto  xl:h-13 px-[21.6px] mb-12.5  xl:p-3.5 sm:w-76.75  2xl:w-105.75  2xl:h-16.5 2xl:px-[26.5px]  ">
          <div className="flex gap-2.5  items-center">
            <img src={footerProps.footerProps.sendEmail.emailIcon}></img>
              <input className=" xl:text-[14px] 2xl:text-[18px]" placeholder={footerProps.footerProps.sendEmail.placeholder}></input>
          </div>
          <button>
-          <img className="xl:h-6 xl:w-6" src={footerProps.footerProps.sendEmail.telegramIcon}></img></button>
+          <img className="invert dark:invert-0 h-6 w-6 2xl:h-7.5 2xl:w-7.5" src={footerProps.footerProps.sendEmail.telegramIcon}></img></button>
        </form>
       </div>
 
@@ -35,9 +35,9 @@ const Footer = (footerProps : FooterInterface) => {
 
                 <div   key={index} className={` border-b border-gray-15 xl:w-max lg:border-0 flex flex-col gap-4  sm:text-center lg:text-left xl:gap-6  2xl:gap-6.25  2xl:font-medium ${isThird ? "row-span-2 " : ""} `}>
                     
-                    <h2 className="text-[16px] xl:text-[18px] 2xl:text-[20px] mb-2 text-gra-60 ">{colunm.serviceTitle}</h2>
+                    <h2 className="font-medium text-[16px] xl:text-[18px] 2xl:text-[20px] mb-2 text-gray-60 ">{colunm.serviceTitle}</h2>
                   
-                    <div className="mb-5  flex flex-col gap-2 xl:gap-6 2xl:gap-3.75 text-[16px]">
+                    <div className=" 2xl:mb-5 font-medium flex flex-col gap-2 xl:gap-4 2xl:gap-5 text-[14px] xl:text-[16px] 2xl:text-[18px]">
                         {colunm.services.map((item) => {
                         return (
                         <Link  to="/" >{item.service}</Link>
@@ -71,4 +71,3 @@ const Footer = (footerProps : FooterInterface) => {
 }
 
 export default Footer
-

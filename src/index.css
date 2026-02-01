@@ -5,6 +5,7 @@
 @import "tailwindcss"; 
 
 
+
 @theme{
     --font-urbanist : "Urbanist", sans-serif;
     --color-gray-08: #141414;

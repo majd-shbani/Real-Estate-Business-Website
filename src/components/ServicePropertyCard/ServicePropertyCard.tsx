@@ -9,7 +9,6 @@ const ServicePropertyCard = ({ id, title, description, image, className } : Serv
     
 
    <div key={id} className={`w-full  h-full border border-gray-15 rounded-xl p-6 xl:p-10 2xl:p-12.5  
-
    ${className || ''}`}
     >
 
