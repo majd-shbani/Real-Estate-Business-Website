@@ -25,7 +25,61 @@ export const testimonialsData = [
         avatar: "/assets/images/Profile-3.webp",
         name: "John Mans",
         location: "USA, Nevada"
-    }
+    },
+    {
+        id: 4,
+        rating: 4,
+        title: "Exceptional Service!",
+        subTitle: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+        avatar: "/assets/images/Profile-1.webp",
+        name: "Wade Warren",
+        location: "USA, California"
+    },
+    {
+        id: 5,
+        rating: 5,
+        title: "Efficient and Reliable",
+        subTitle: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+        avatar: "/assets/images/Profile-2.webp",
+        name: "Emelie Thomson",
+        location: "USA, Florida"
+    },
+    {
+        id: 6,
+        rating: 4,
+        title: "Trusted Advisors",
+        subTitle: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+        avatar: "/assets/images/Profile-3.webp",
+        name: "John Mans",
+        location: "USA, Nevada"
+    },
+    {
+        id: 7,
+        rating: 3,
+        title: "Exceptional Service!",
+        subTitle: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+        avatar: "/assets/images/Profile-1.webp",
+        name: "Wade Warren",
+        location: "USA, California"
+    },
+    {
+        id: 8,
+        rating: 5,
+        title: "Efficient and Reliable",
+        subTitle: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+        avatar: "/assets/images/Profile-2.webp",
+        name: "Emelie Thomson",
+        location: "USA, Florida"
+    },
+    {
+        id: 9,
+        rating: 4,
+        title: "Trusted Advisors",
+        subTitle: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+        avatar: "/assets/images/Profile-3.webp",
+        name: "John Mans",
+        location: "USA, Nevada"
+    },
 ];
 
 export const StarIcon = {

@@ -38,7 +38,6 @@ const OurTeamSection = () => {
     <Section
         title={TeamHeaderData.title}
         description={TeamHeaderData.description}
-        buttonText={TeamHeaderData.ButtonText}
     >
         <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-5 2xl:gap-7.5'>
           {employees.map(card => (

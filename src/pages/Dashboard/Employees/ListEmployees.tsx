@@ -76,7 +76,7 @@ const ListEmployees = () => {
       {employees.length === 0 ? (
         <p className="text-lg xl:text-2xl text-gray-60 text-center py-6 xl:py-10">No employees found. Add one to get started!</p>
       ) : (
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 xl:gap-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 xl:gap-6'>
           {employees.map((emp) => (
             <DashboardEmployeeCard
               key={emp.id}
