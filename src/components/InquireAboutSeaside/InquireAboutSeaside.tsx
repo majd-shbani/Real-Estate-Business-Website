@@ -23,7 +23,7 @@ const InquireAboutSeaside = () => {
                     description="Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have."
                     className="xl:w-[27.0312vw]! px-0! m-0!"
             />
-            <FormContainer formRef={formRef} onSubmit={handleSubmit}>
+            <FormContainer formRef={formRef} onSubmit={handleSubmit} className="p-5! xl:p-10! 2xl:p-[50px]! xl:w-[54.6527vw] 2xl:w-[51.25vw]">
                 {/* First Name + Last Name */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-[30px]">
                     {InquireAboutSeaSideFormData

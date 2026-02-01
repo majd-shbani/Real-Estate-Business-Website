@@ -6,7 +6,7 @@ import Title from "../Title/Title"
 
 const HeroHome = () => {
     return (
-        <header className="pt-36 xl:pt-0 my-10 xl:my-[98px] 2xl:my-36">
+        <header className="pt-36 xl:pt-0 mt-10 xl:mt-[98px] 2xl:mt-36">
             <div className="pl-0 xl:pl-[5.55555vw] 2xl:pl-[8.4375vw] xl:pt-7 2xl:pt-5 flex flex-col-reverse xl:flex-row xl:flex-wrap xl:items-center xl:justify-between">
                 <div className="xl:w-[42.3611vw] 2xl:w-[39.4791vw] px-4 lg:px-[7.8125vw] xl:px-0">
                     <Title
