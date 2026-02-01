@@ -13,8 +13,8 @@ const SectionHeader = ({ title, description, buttonText, to, className, showStar
   
     return (
         <div className={`w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-6 lg:gap-37.5 xl:gap-50 font-urbanist ${className || ""}`}>
-            <div className="flex flex-col flex-1 gap-4">
-               {showStars &&  <div className="flex gap-1 mb-1 -ms-2 lg:-ms-5">
+            <div className="flex flex-col flex-1 ">
+               {showStars &&  <div className="flex gap-1 mb-2.5 -ms-2 lg:-ms-5">
                     <img src="./assets/icons/SectionIcon-1.svg" className='opacity-100' alt="SectionIcon-1" />
                     <img src="./assets/icons/SectionIcon-2.svg" className='opacity-60' alt="SectionIcon-2" />
                     <img src="./assets/icons/SectionIcon-3.svg" className='opacity-40' alt="SectionIcon-3" />
@@ -23,7 +23,7 @@ const SectionHeader = ({ title, description, buttonText, to, className, showStar
                     <h2 className="text-[28px] lg:text-[38px] 2xl:text-5xl font-semibold   mb-2.5 lg:mb-2.5 2xl:mb-3.5 leading-[150%] ">
                         {title}
                     </h2>
-                    <p className=" text-sm lg:text-base  2xl:text-lg leading-[150%] font-medium">
+                    <p className=" text-sm lg:text-base text-gray-60  2xl:text-lg leading-[150%] font-medium">
                         {description}
                     </p>
                 </div>
@@ -34,7 +34,7 @@ const SectionHeader = ({ title, description, buttonText, to, className, showStar
         <Button
             text={buttonText}
             to={to}
-            className="bg-gray-15 text-white hover:bg-gray-700 transition-colors"
+            className="bg-gray-10 text-white hover:bg-gray-700 transition-colors "
         />
     </div>
 )}

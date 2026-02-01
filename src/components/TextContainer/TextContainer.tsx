@@ -9,9 +9,10 @@ const TextContainer = ({
   return (
     <div
       className={`
-        w-full
+       w-full
         bg-gray-10
-        rounded-lg xl:rounded-[10px] 2xl:reounded-xl
+        p-4
+        rounded-lg
         border
       border-gray-15
         text-center sm:text-left
