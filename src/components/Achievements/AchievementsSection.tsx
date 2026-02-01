@@ -7,7 +7,7 @@ import  Achievement from "./Achievement"
 
 const AchievementsSection = () => {
   return (
-    <div className=" ">
+    
 
       <Section title={achievementHeader.title} 
       description={achievementHeader.description} 
@@ -27,7 +27,7 @@ const AchievementsSection = () => {
       />
 
 
-    </div>
+    
   )
 }
 

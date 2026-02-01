@@ -3,11 +3,11 @@ import type { FooterProps } from "../../interfaces/Footer/Footer";
 
 export let footerProps : FooterProps = {
     imageIcon : "/assets/images/Symbol.webp" ,
-    imageName : "/assets/images/Estatein.webp" ,
+    imageName : "/assets/images/Estatein.svg" ,
     sendEmail : {
         emailIcon : "/assets/images/Vector(15).webp",
         placeholder : "Enter Your Email",
-        telegramIcon : "./assets/images/Send.webp"
+        telegramIcon : "/assets/images/download (2).svg"
     },
    footerService : [
     {
@@ -117,19 +117,21 @@ export let footerProps : FooterProps = {
    terms : "Terms & Conditions",
    socialMedia : [
        {
-           icon : "./assets/images/facebook.webp"
+           icon : "/assets/images/facebook.webp"
+       }
+       ,
+
+       {
+           icon : "/assets/images/linkdin.webp"
+       }
+       ,
+       
+       {
+           icon : "/assets/images/x.webp"
        }
        ,
        {
-           icon : "./assets/images/linkdin.webp"
-       }
-       ,
-       {
-           icon : "./assets/images/x.webp"
-       }
-       ,
-       {
-        icon : "./assets/images/youtube.webp"
+          icon : "/assets/images/youtube.webp"
        }
    ]
    

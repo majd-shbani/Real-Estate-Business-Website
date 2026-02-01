@@ -21,6 +21,6 @@ export interface PropertyKeyFeaturesProps {
    keyFeatures: KeyFeatures
 }
 
-export interface PropertyKeyFeatures {
+export interface PropertyKeyFeaturesInterface {
    card : PropertyKeyFeaturesProps
 }
