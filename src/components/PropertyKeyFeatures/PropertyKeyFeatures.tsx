@@ -1,7 +1,7 @@
 
 import type { PropertyKeyFeaturesProps } from "../../interfaces/PropertyKeyFeatures/PropertyKeyFeatures"
 
- {/*<PropertyKeyFeatures card={propertyKeyData} />*/}
+
 
 const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesProps) => {
   return (

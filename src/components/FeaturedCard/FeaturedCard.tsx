@@ -7,7 +7,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price, cate
       const [isReadMore, setIsReadMore] = useState(true);
 
       return (
-            <BaseCard className="p-6! xl:p-7.5! 2xl:p-10! h-full self-start">
+            <BaseCard className="p-6! xl:p-7.5! 2xl:p-10! h-full self-start mx-auto xl:mx-0 max-w-112.5 md:max-w-full">
 
                   <div className="h-52.5 xl:h-63.5 2xl:h-79.5 rounded-[10px] mb-4 xl:mb-5 2xl:mb-7.5 relative">
                         <img src={image} alt={alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 rounded-[10px]" />
@@ -39,12 +39,12 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price, cate
                               </div>
                         )}
 
-                        <div className={`flex justify-between items-center gap-[1vw]}`}>
+                        <div className={`flex justify-between items-center gap-[1vw] }`}>
                               <div>
                                     <p className="text-[14px] 2xl:text-[18px] font-medium text-gray-60">Price</p>
                                     <p className="text-[18px] xl:text-[20px] 2xl:text-[24px] font-semibold">{`$${price}`}</p>
                               </div>
-                              <Button text="View Property Details" to={`/propertyDetails/${id}`} className="bg-purple-60 text-white px-[2.24vw] xl:px-[3.3vw]! 2xl:px-[2.838vw]!" />
+                              <Button text="View Property Details" to={`/propertyDetails/${id}`} className="bg-purple-60 text-white px-[2.24vw] xl:px-[3.3vw]! 2xl:px-[2.4vw] " />
                         </div>
                   </div>
             </BaseCard>
