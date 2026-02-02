@@ -3,7 +3,7 @@ import React from 'react'
 const SplashScreen: React.FC = () => {
     return (
     <div 
-        className="fixed inset-0 z-100 flex items-center justify-center bg-gray-08"
+        className="fixed inset-0 z-999 flex items-center justify-center bg-gray-08"
         style={{
             animation: 'fadeOut 0.5s ease-in-out 1.5s forwards'
         }}

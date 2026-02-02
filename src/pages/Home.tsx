@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div>
             <HeroHome />
-            <FeaturedSection />
+            <FeaturedSection viewMode="home" />
             <TestimonialSection />
             <FaqSection />
         </div>

@@ -1,9 +1,9 @@
 
-import type {  PropertyKeyFeaturesInterface } from "../../interfaces/PropertyKeyFeatures/PropertyKeyFeatures"
+import type { PropertyKeyFeaturesProps } from "../../interfaces/PropertyKeyFeatures/PropertyKeyFeatures"
 
 
 
-const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesInterface) => {
+const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesProps) => {
   return (
     <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] flex flex-col lg:flex-row  gap-5 lg:gap-5 2xl:gap-7.5   py-5 mb-20 xl:mb-30 2xl:mb-37.5 ">
 

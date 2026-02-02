@@ -7,7 +7,7 @@ import Title from "../Title/Title"
 const HeroHome = () => {
     return (
         <header className="pt-36 xl:pt-0 mt-10 xl:mt-[98px] 2xl:mt-36">
-            <div className="pl-0 xl:pl-[5.55555vw] 2xl:pl-[8.4375vw] xl:pt-7 2xl:pt-5 flex flex-col-reverse xl:flex-row xl:flex-wrap xl:items-center xl:justify-between">
+            <div className="pl-0 xl:pl-[5.55555vw] 2xl:pl-[8.4375vw] flex flex-col-reverse xl:flex-row xl:flex-wrap xl:items-center xl:justify-between">
                 <div className="xl:w-[42.3611vw] 2xl:w-[39.4791vw] px-4 lg:px-[7.8125vw] xl:px-0">
                     <Title
                         title="Discover Your Dream Property with Estatein"
@@ -15,15 +15,15 @@ const HeroHome = () => {
                     />
 
                     <div className="">
-                        <Button to="" className="w-full mb-4 bg-gray-15 md:w-fit md:mr-4 md:mb-12.5 2xl:mr-5 2xl:mb-15" text="Learn More"></Button>
-                        <Button to="Properties" className="w-full mb-10 bg-purple-60 md:w-fit md:mr-4 md:mb-12.5 2xl:mr-5 2xl:mb-15" text="Browse Properties"></Button>
+                        <Button to="" className="w-full mb-4 bg-gray-15 md:w-fit md:mr-4 md:mb-12.5 2xl:mr-5 2xl:mb-15 leading-[150%]" text="Learn More"></Button>
+                        <Button to="Properties" className="w-full mb-10 bg-purple-60 md:w-fit md:mr-4 md:mb-12.5 2xl:mr-5 2xl:mb-15 leading-[150%]" text="Browse Properties"></Button>
                     </div>
 
-                    <StatisticeSection className="mb-10 xl:mb-0 [&>div]:p-4 [&>div]:xl:py-3.5 [&>div]:xl:px-5 [&>div]:2xl:py-4 [&>div]:2xl:px-6"/>
+                    <StatisticeSection className="[&>div]:p-4 [&>div]:xl:py-3.5 [&>div]:xl:px-5 [&>div]:2xl:py-4 [&>div]:2xl:px-6"/>
                 </div>
 
-                <div className=" px-4 xl:px-0 mx-auto xl:mx-0 mb-22 xl:mb-0 flex flex-col-reverse relative max-w-[100vw] xl:w-[47.9166vw]">
-                    <div className="absolute top-full xl:top-[40%] left-0 xl:-left-15 -translate-y-15 xl:-translate-y-full bg-gray-08  border border-solid border-gray-15 w-[117px] h-[117px] md:w-[129px] 2xl:w-[140px] md:h-[129px] 2xl:h-[140px] rounded-full  flex justify-center items-center">
+                <div className="xl:w-[47.9166vw] px-4 xl:px-0 mx-auto xl:mx-0 mb-14 xl:mb-0 flex flex-col-reverse relative">
+                    <div className="absolute top-full xl:top-[40%] left-0 xl:-left-20 -translate-y-15 xl:-translate-y-full bg-gray-08  border border-solid border-gray-15 w-[117px] h-[117px] md:w-[129px] 2xl:w-[175px] md:h-[129px] 2xl:h-[175px] rounded-full  flex justify-center items-center">
                         
                         {/* الصورة الخلفية */}
                         <img
@@ -31,7 +31,7 @@ const HeroHome = () => {
                             src="/assets/images/herohome/textContainer.webp"
 
                             alt="textContainer img"
-                            className="absolute inset-0 m-auto"
+                            className="w-[96.12px] xl:w-[105.99] 2xl:w-[143.76px] h-[96.05px] xl:h-[105.99] 2xl:h-[143.76px] absolute inset-0 m-auto"
                         />
 
                         {/* الدائرة الداخلية + السهم */}
@@ -51,7 +51,7 @@ const HeroHome = () => {
                 </div>
 
             </div>
-            <div className="   border-t border-b border-gray-15 shadow-thin-grey xl:shadow-[0px_0px_0px_10px_#191919] mb-20 xl:mb-30 2xl:mb-37.5 mt-10 xl:mt-0 ">
+            <div className="border-t border-b border-gray-15 shadow-thin-grey xl:shadow-[0px_0px_0px_10px_#191919] mb-20 xl:mb-30 2xl:mb-37.5 mt-10 xl:mt-0 ">
 
             <InfoGrid/> 
             </div>
