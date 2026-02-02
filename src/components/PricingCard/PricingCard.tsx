@@ -29,10 +29,11 @@ const PricingCard = ({items} : pricinCardgData ) => {
                                         <div className={` ${applyLeftBorder ? 'xl:pl-5 xl:border-l xl:border-gray-15' : ''} `}>
                                             <p className="text-sm font-medium 2xl:text-lg text-gray-60 mb-2.5 xl:mb-3 2xl:mb-4">{detail.title}</p>
                                             <div className="flex items-center gap-3 2xl:gap-4">
-                                                {detail.price && 
-                                                    <b className="text-lg lg xl:text-xl 2xl:text-2xl font-semibold">
-                                                    ${detail.price}
-                                                    </b>}
+                                                        {detail.price &&
+                                                              <b className="text-lg lg xl:text-xl 2xl:text-2xl font-semibold">
+                                                                    {detail.isCurrency ? `$${detail.price}` : detail.price}
+                                                              </b>
+                                                        }
                                                     {detail.subTitle && <p className="text-lg lg xl:text-xl 2xl:text-2xl font-semibold">{detail.subTitle }</p> }
                                                     {detail.btn && <Button text={detail.btn} className="rounded-[28px]! px-3! py-1.5! xl:px-3! xl:py-1.5! 2xl:px-3.5! 2xl:py-2! bg-gray-10 text-gray-60"/>}
                                             </div>
