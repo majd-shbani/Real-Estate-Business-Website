@@ -5,7 +5,7 @@ export interface PropertyImage {
 }
 
 export interface PropertyDetails {
-      id: string;
+      id?: string;
       title: string;
       location: string;
       price: number;

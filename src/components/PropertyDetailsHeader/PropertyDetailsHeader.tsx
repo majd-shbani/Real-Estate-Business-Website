@@ -15,7 +15,7 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
                         <h2 className="text-[20px] xl:text-[24px] 2xl:text-[30px] font-semibold text-nowrap">{property.title}</h2>
                         <div className="flex justify-between items-center flex-wrap gap-2.5 w-full">
                               <div className="p-2.5 flex items-center gap-1.5 border border-gray-15 rounded-lg w-fit">
-                                    <img src="assets/icons/Location-Icon.svg" alt="Location-Icon"></img>
+                                    <img src="/assets/icons/Location-Icon.svg" alt="Location-Icon"></img>
                                     <span className=" text-[14px] 2xl:text-[18px] font-medium">{property.location}</span>
                               </div>
                               <div className="flex flex-row xl:flex-col items-center gap-1 xl:items-start">
@@ -65,7 +65,7 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
 
                         <div className="flex justify-between md:justify-center items-center w-full mt-7.5 gap-4 p-2.5 bg-gray-08 md:w-fit mx-auto rounded-[100px]">
                               <button onClick={() => setActiveIndex(prev => prev > 0 ? prev - 1 : 0)} className="p-2.5 xl:p-3.5 border rounded-full">
-                                    <img src="assets/icons/arrow-left-Icon.svg" alt="arrow-left-Icon" />
+                                    <img src="/assets/icons/arrow-left-Icon.svg" alt="arrow-left-Icon" />
                               </button>
 
                               <PaginationDots
@@ -74,7 +74,7 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
                               />
 
                               <button onClick={() => setActiveIndex(prev => (prev + 1) % property.images.length)} className="p-2.5 xl:p-3.5 border rounded-full">
-                                    <img src="assets/icons/arrow-right-Icon.svg" alt="arrow-right-Icon" />
+                                    <img src="/assets/icons/arrow-right-Icon.svg" alt="arrow-right-Icon" />
                               </button>
                         </div>
                   </div>

@@ -60,7 +60,7 @@ const routes = createBrowserRouter([
       element: <ListRealEstates />
     },
     {
-      path: "real-estate/:id/create",
+      path: "real-estate/create",
       element: <RealEstateForm />
     },
     {
