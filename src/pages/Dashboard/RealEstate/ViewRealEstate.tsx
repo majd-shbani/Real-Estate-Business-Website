@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { FaBed, FaBath, FaRulerCombined, FaMapMarkerAlt, FaArrowLeft, FaCheckCircle } from "react-icons/fa";
 import BaseCard from "../../../components/BaseCard/BaseCard";
 import { usePropertyDetails } from "../Hooks/Hooks";
+import { BsHouseCheck } from "react-icons/bs";
 
 
 const PricingRow = ({ label, value }: { label: string; value: number | string }) => (
@@ -31,7 +32,7 @@ const ViewRealEstate = () => {
       }
 
       return (
-            <div className=" flex flex-col gap-4 lg:gap-6 xl:gap-8 text-whit">
+            <div className=" flex flex-col gap-4 lg:gap-6 xl:gap-8 text-white">
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row justify-between items-start md:items-center gap-4 mb-0!">
                         <div>
@@ -39,9 +40,15 @@ const ViewRealEstate = () => {
                                     <FaArrowLeft /> Back to List
                               </button>
                               <h1 className="text-2xl md:text-4xl font-bold">{property.name}</h1>
-                              <p className="flex items-center gap-2 text-gray-60 mt-2 text-[24px] font-medium">
-                                    <FaMapMarkerAlt className="text-purple-60" /> {property.location}
-                              </p>
+                              <div className="flex gap-5">
+                                    <p className="flex items-center gap-2 text-gray-60 mt-2 text-[24px] font-medium">
+                                          <FaMapMarkerAlt className="text-purple-60 " /> {property.location}
+                                    </p>
+                                    <p className="flex items-center gap-2 text-gray-60 mt-2 text-[24px] font-medium">
+                                          <BsHouseCheck className="text-purple-60" />{property.specs.buildYear}
+                                    </p>
+                              </div>
+                              
                         </div>
 
                         <div className="bg-gray-10 px-6 py-4 rounded-[10px] 2xl:rounded-xl border border-gray-15">
