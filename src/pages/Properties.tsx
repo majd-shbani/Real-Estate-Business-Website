@@ -1,3 +1,4 @@
+import FeaturedSection from "../components/FeaturedSection/FeaturedSection"
 import HeroProperties from "../components/HeroProperties/HeroProperties"
 import PropertyBookingSection from "../components/PropertyBookingSection/PropertyBookingSection"
 
@@ -7,13 +8,14 @@ import PropertyBookingSection from "../components/PropertyBookingSection/Propert
 
 
 const PropertyDetails = () => {
-    return (
-        <div>
-          
-            <HeroProperties  />
-            <PropertyBookingSection/>
-        </div>
-    )
+      return (
+            <div>
+
+                  <HeroProperties />
+                  <FeaturedSection viewMode="properties" />
+                  <PropertyBookingSection />
+            </div>
+      )
 }
 
 export default PropertyDetails

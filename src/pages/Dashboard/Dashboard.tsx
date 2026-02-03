@@ -14,7 +14,7 @@ const Dashboard = ({links}: DashboardProps) => {
     const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div className="grid grid-cols-12 h-screen">
+    <div className="flex h-screen overflow-hidden">
         <header className="md:hidden fixed top-0 left-0 right-0 bg-gray-15 p-4 flex items-center justify-between z-50">
             <div className="max-w-20">
                 <img src={DEFAULT_DATA.logo} alt="logo" className="w-full h-auto"/>
@@ -26,8 +26,8 @@ const Dashboard = ({links}: DashboardProps) => {
                 {isMenuOpen ? <IoCloseCircleOutline /> : <IoMenu /> }
             </button>
         </header>
-        <aside className={`flex flex-col items-center justify-between bg-gray-15 p-4 xl:p-6 2xl:p-7.5 md:col-span-3 lg:col-span-2 fixed md:relative
-            top-0 bottom-0 right-0 w-1/2 md:w-full z-40 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}>
+        <aside className={`flex flex-col items-center justify-between bg-gray-15 p-4 xl:p-6 2xl:p-7.5 fixed
+            top-0 bottom-0 left-0 md:left-0 w-1/2 md:w-1/4 lg:w-1/6 z-40 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
             <div className="flex flex-col items-center gap-5 xl:gap-10">
                 <div className="max-w-30 xl:max-w-full">
                     <img src={DEFAULT_DATA.logo} alt="logo" className="w-full"/>
@@ -56,11 +56,11 @@ const Dashboard = ({links}: DashboardProps) => {
         </aside>
         {isMenuOpen && (
             <div 
-                className="md:hidden fixed bg-gray-08 bg-opacity-50 z-30"
+                className="md:hidden fixed inset-0 bg-gray-08 bg-opacity-50 z-30"
                 onClick={closeMenu}
             />
         )}
-        <main className="bg-gray-08 col-span-12 md:col-span-9 lg:col-span-10 p-[4.16666vw] pt-28 md:pt-[4.16666vw] xl:py-7.5 2xl:py-10">
+        <main className="flex-1 bg-gray-08 overflow-auto ml-0 md:ml-[25%] lg:ml-[16.666667%] p-[4.16666vw] pt-28 md:pt-[4.16666vw] xl:py-7.5 2xl:py-10">
             <Outlet />
         </main>
     </div>

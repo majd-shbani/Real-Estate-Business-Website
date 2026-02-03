@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Provider } from 'react-redux'
@@ -18,6 +18,7 @@ import ListEmployees from './pages/Dashboard/Employees/ListEmployees'
 import ViewRealEstate from './pages/Dashboard/RealEstate/ViewRealEstate'
 import RealEstateForm from './pages/Dashboard/RealEstate/RealEstateForm'
 import EmployeeForm from './pages/Dashboard/Employees/EmployeeForm'
+import SplashScreen from './components/SplashScreen/SplashScreen'
 
 
 
@@ -59,7 +60,7 @@ const routes = createBrowserRouter([
       element: <ListRealEstates />
     },
     {
-      path: "real-estate/:id/create",
+      path: "real-estate/create",
       element: <RealEstateForm />
     },
     {
@@ -85,11 +86,26 @@ const routes = createBrowserRouter([
   ]}
 ]
 )
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [])
+  return (
+    <>
+      {isLoading && <SplashScreen />}
+      <RouterProvider router={routes} />
+    </>
+  )
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode >
     <Provider store={store}>
-      <RouterProvider router={routes}/>
+      <App/>
     </Provider>
   </StrictMode>,
 )

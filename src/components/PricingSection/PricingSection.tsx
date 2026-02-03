@@ -1,11 +1,12 @@
 
-
-import { PricingCarsData } from "../../data/PricingData/PricingData"
-import type { pricingData } from "../../interfaces/Pricing/Pricing"
+import type { pricingData, PricingPlane } from "../../interfaces/Pricing/Pricing"
 import PricingCard from "../PricingCard/PricingCard"
 import Section from "../Section/Section"
+interface PricingSectionProps extends pricingData {
+      pricingItems: PricingPlane[];
+}
 
-const PricingSection = ({title , price}: pricingData) => {
+const PricingSection = ({ title, price, pricingItems }: PricingSectionProps) => {
     return (
         <Section title="Comprehensive Pricing Details"
                 description={`At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision`}>
@@ -20,7 +21,7 @@ const PricingSection = ({title , price}: pricingData) => {
                                 <b className="text-2xl xl:text-3xl 2xl:text-[40px]">${price}</b>
                             </div>
                             <div className="flex flex-col gap-5 xl:gap-10 2xl:gap-12.5">
-                                <PricingCard items={PricingCarsData} />
+                                  <PricingCard items={pricingItems} />
                             </div>
                         </div>
                     </div>

@@ -9,6 +9,7 @@ export interface FeaturedCardProps {
       alt:string,
       title: string,
       description: string,
-      details: Details[],
-      price: string
+      details?: Details[],
+      price: string;
+      categoryBadge?: string;
 }
