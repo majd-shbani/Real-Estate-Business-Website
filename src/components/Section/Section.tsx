@@ -24,15 +24,17 @@ const Section = ({
     headerClassName
 }: SectionProps) => {
     return (
-        <section className={`w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5 ${className || ''}`}>
+        <section className={`w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5  relative ${className || ''}`}>
             <SectionHeader 
                 title={title}
                 description={description}
                 buttonText={buttonText}
                 to={to}
                 showStars={showStars}
-                className={`mb-10 xl:mb-15 2xl:mb-20 ${headerClassName || ''}`}
+                className={` ${headerClassName || ''}`}
+              
             />
+            
             {children}
         </section>
     );

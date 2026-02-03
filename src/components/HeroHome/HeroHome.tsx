@@ -4,9 +4,11 @@ import InfoGrid from "../FeaturesCard/InfoGrid"
 import StatisticeSection from "../StatisticeSection/StatisticeSection"
 import Title from "../Title/Title"
 
+import { motion } from "framer-motion";
+
 const HeroHome = () => {
     return (
-        <header className="pt-36 xl:pt-0 mt-10 xl:mt-[98px] 2xl:mt-36">
+        <header className="pt-36 xl:pt-0 mt-10 xl:mt-24.5 2xl:mt-36">
             <div className="pl-0 xl:pl-[5.55555vw] 2xl:pl-[8.4375vw] flex flex-col-reverse xl:flex-row xl:flex-wrap xl:items-center xl:justify-between">
                 <div className="xl:w-[42.3611vw] 2xl:w-[39.4791vw] px-4 lg:px-[7.8125vw] xl:px-0">
                     <Title
@@ -23,7 +25,29 @@ const HeroHome = () => {
                 </div>
 
                 <div className="xl:w-[47.9166vw] px-4 xl:px-0 mx-auto xl:mx-0 mb-14 xl:mb-0 flex flex-col-reverse relative">
-                    <div className="absolute top-full xl:top-[40%] left-0 xl:-left-20 -translate-y-15 xl:-translate-y-full bg-gray-08  border border-solid border-gray-15 w-[117px] h-[117px] md:w-[129px] 2xl:w-[175px] md:h-[129px] 2xl:h-[175px] rounded-full  flex justify-center items-center">
+                    <motion.div
+                        className="absolute top-full xl:top-[40%] left-0 xl:-left-20 -translate-y-15 xl:-translate-y-full bg-gray-08  border border-solid border-gray-15 w-29.25 h-29.25 md:w-32.25 2xl:w-43.75 md:h-32.25 2xl:h-43.75 rounded-full  flex justify-center items-center"
+                        animate={{
+                            rotate: 360,
+                            scale: [1, 1.05, 1]
+                        }}
+                        transition={{
+                            rotate: {
+                                duration: 20,
+                                repeat: Infinity,
+                                ease: "linear"
+                            },
+                            scale: {
+                                duration: 2,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }
+                        }}
+                        whileHover={{
+                            scale: 1.1,
+                            transition: { duration: 0.3 }
+                        }}
+                    >
                         
                         {/* الصورة الخلفية */}
                         <img
@@ -35,14 +59,14 @@ const HeroHome = () => {
                         />
 
                         {/* الدائرة الداخلية + السهم */}
-                        <div className="bg-gray-10 w-[53.18px] md:w-[58.63px] 2xl:w-[70px] h-[53.18px] 2xl:h-[70px] md:h-[58.63px] rounded-full flex justify-center items-center z-10">
+                        <div className="bg-gray-10 w-[53.18px] md:w-[58.63px] 2xl:w-17.5 h-[53.18px] 2xl:h-17.5 md:h-[58.63px] rounded-full flex justify-center items-center z-10">
                             <img
                             src="/assets/images/herohome/arrow.webp"
 
                             alt="arrow icon"
                             />
                         </div>
-                    </div>
+                    </motion.div>
                     <div className="w-full border border-sloid border-gray-15 rounded-xl xl:rounded-none">
 
                         <img className="w-full" src="/assets/images/herohome/heroImage.webp" alt="hero img"></img>

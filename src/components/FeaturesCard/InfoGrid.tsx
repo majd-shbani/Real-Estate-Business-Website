@@ -5,23 +5,27 @@ const defaultFeatures = [
     {
         id: 1,
         title: 'Find Your Dream Home',
-        icon: './assets/icons/FeatureIcon-1.svg'
+        icon: './assets/icons/FeatureIcon-1.svg',
+        link: '/Properties'
             
     },
     {
         id: 2,
         title: 'Unlock Property Value',
-        icon: './assets/icons/FeatureIcon-2.svg'
+        icon: './assets/icons/FeatureIcon-2.svg',
+        link: '/services'
     },
     {
         id: 3,
         title: 'Effortless Property Management  ',
-        icon: './assets/icons/FeatureIcon-3.svg'
+        icon: './assets/icons/FeatureIcon-3.svg',
+        link: '/services'
     },
     {
         id: 4,
         title: 'Smart Investments, Informed Decisions',
-        icon: './assets/icons/FeatureIcon-4.svg'
+        icon: './assets/icons/FeatureIcon-4.svg',
+        link: '/contact'
     }
 ];
 
@@ -30,6 +34,7 @@ interface InfoGridProps {
         id: number;
         title: React.ReactNode;
         icon: string;
+        link?: string;
     }[];
 }
 
@@ -44,6 +49,7 @@ const InfoGrid = ({ items = defaultFeatures }: InfoGridProps) => {
                     key={feature.id}
                     icon={feature.icon}
                     title={feature.title}
+                    link={feature.link}
                 />
             ))}
         </div>
