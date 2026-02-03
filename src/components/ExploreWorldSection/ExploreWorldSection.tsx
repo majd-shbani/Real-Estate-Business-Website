@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader/SectionHeader"
 
 const ExploreWorldSection = ({images} : ExploreImg) => {
     return (
-        <div className="px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]">
+        <div className="px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]">
             <div className="w-full mx-auto mb-20 xl:mb-30 2xl:mb-37.5 p-6 md:p-10 xl:p-15 2xl:p-20 bg-[url(assets/images/EploreBGDesign.webp)] bg-gray-10 bg-cover bg-center rounded-xl grid grid-cols-4 gap-2.5 xl:gap-5 ">
                 {images.map((img  , index) => {
                     let spanClass = ""

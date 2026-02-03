@@ -11,19 +11,19 @@ import { useEffect, useState } from "react"
 
 
 const Root: React.FC = () => {
-    const [status, setStatus] = useState<Theme>(() => {
-        const savedTheme = localStorage.getItem("theme") as Theme
-        return savedTheme || "dark"
-    })
-    useEffect(() => {
-        localStorage.setItem("theme", status)
-    }, [status])
+      const [status, setStatus] = useState<Theme>(() => {
+            const savedTheme = localStorage.getItem("theme") as Theme
+            return savedTheme || "dark"
+      })
+      useEffect(() => {
+            localStorage.setItem("theme", status)
+      }, [status])
 
     const editStatusHandle = (): void => {
         setStatus((prev) => (prev === "dark" ? "light" : "dark"))
     }
     return (
-        <div className={`${status} dark:bg-gray-08 dark:text-white bg-white text-gray-08`}>
+        <div className={`${status} dark:bg-gray-08 dark:text-white bg-[#b4b1b1] text-gray-08`}>
             <Nav status={status} toggleMood={editStatusHandle} /> 
             <Outlet/>
             <StartJourney journeyProps={journeyProps} />
@@ -33,3 +33,7 @@ const Root: React.FC = () => {
 }
 export default Root
 
+
+/* bg-[#c4c2c2]
+bg-[#5e5e5e] 
+bg-[#6b6b6b]*/
