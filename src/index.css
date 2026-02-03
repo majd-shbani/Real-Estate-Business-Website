@@ -22,6 +22,19 @@
     --shadow-thick-grey: 0px 0px 0px 8px #191919;
     --shadow-medium-grey: 0px 0px 0px 6px #191919;
     --shadow-thin-grey: 0px 0px 0px 4px #191919;
+/* light mode */
+
+      /* text */
+      --color-Jet-Gray: #3e3e42;
+      /* border card */
+      --color-Silver: #c0c0c0;
+      /* navbar footer buttons */
+      --color-Platinum: #e8e8e8;
+      /* main background*/
+      --color-Alice-Blue: #f0f4f7;
+      /* purple button */
+      --color-bg-Indigo: #4f46e5;
+      --color-border-Indigo: #3730a3;
 }
 
 

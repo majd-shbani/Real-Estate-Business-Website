@@ -19,17 +19,21 @@ const Root: React.FC = () => {
             localStorage.setItem("theme", status)
       }, [status])
 
-      const editStatusHandle = (): void => {
-            setStatus((prev) => (prev === "dark" ? "light" : "dark"))
-      }
-      return (
-            <div className={`${status} dark:bg-gray-08 dark:text-white bg-white text-gray-08`}>
-                  <Nav status={status} toggleMood={editStatusHandle} />
-                  <Outlet />
-                  <StartJourney journeyProps={journeyProps} />
-                  <Footer footerProps={footerProps} />
-            </div>
-      )
+    const editStatusHandle = (): void => {
+        setStatus((prev) => (prev === "dark" ? "light" : "dark"))
+    }
+    return (
+        <div className={`${status} dark:bg-gray-08 dark:text-white bg-[#b4b1b1] text-gray-08`}>
+            <Nav status={status} toggleMood={editStatusHandle} /> 
+            <Outlet/>
+            <StartJourney journeyProps={journeyProps} />
+            <Footer footerProps={footerProps} />
+        </div>
+    )
 }
 export default Root
 
+
+/* bg-[#c4c2c2]
+bg-[#5e5e5e] 
+bg-[#6b6b6b]*/

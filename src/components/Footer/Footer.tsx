@@ -4,10 +4,11 @@ import type {  FooterInterface } from "../../interfaces/Footer/Footer"
 
 
 
+
 const Footer = (footerProps : FooterInterface) => {
   return (
     <div className=" font-urbanist ">
-
+          
     <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75">
       <div >
         <div className="flex 2xl:gap-2.5 gap-[7.25px] mb-5 2xl:mb-7.5">
@@ -18,7 +19,7 @@ const Footer = (footerProps : FooterInterface) => {
 
        <form className="w-full flex gap-[7.5px] justify-between 2xl:gap-2.5 border border-gray-15 rounded-lg  h-13 py-auto  xl:h-13 px-[21.6px] mb-12.5  xl:p-3.5 sm:w-76.75  2xl:w-105.75  2xl:h-16.5 2xl:px-[26.5px]  ">
          <div className="flex gap-2.5  items-center">
-           <img src={footerProps.footerProps.sendEmail.emailIcon}></img>
+           <img className="2xl:w-6 2xl:h-6" src={footerProps.footerProps.sendEmail.emailIcon}></img>
              <input className=" xl:text-[14px] 2xl:text-[18px]" placeholder={footerProps.footerProps.sendEmail.placeholder}></input>
          </div>
          <button>
@@ -49,7 +50,7 @@ const Footer = (footerProps : FooterInterface) => {
       </div>
     </div>
 
-    <div className="text-white bg-gray-10 flex flex-col-reverse  lg:flex-row  lg:justify-between   text-[14px] lg:px-31 xl:px-20 lg:h-17  2xl:text-[18px]  lg:flex w-full 2xl:h-26  2xl:px-40.5">
+    <div className="text-white bg-gray-10 flex flex-col-reverse  lg:flex-row  lg:justify-between font-medium  text-[14px] lg:px-31 xl:px-20 lg:h-17 2xl:text-[18px]  lg:flex w-full 2xl:h-26  2xl:px-40.5">
         <div className="text-center mb-5 lg:flex lg:my-2 lg:gap-5 2xl:gap-9.5 2xl:my-10 lg:items-center">
            <p className=" mb-2.5 lg:mb-0"> {footerProps.footerProps.copyright}</p>
            <p>{footerProps.footerProps.terms}</p>
@@ -57,11 +58,9 @@ const Footer = (footerProps : FooterInterface) => {
         <div className=" flex gap-2 items-center justify-center  2xl:gap-4 mx-15.5 sm:mx-auto py-5  xl:my-3.5 2xl:my-6.5 lg:mr-5 ">
             {footerProps.footerProps.socialMedia.map((item) => {
                 return (
-                    <div className="bg-gray-08 border border-gray-08 rounded-full w-15 h-15 p-5 lg:w-10 lg:h-10 lg:px-3 lg:py-2.75 2xl:p-3.5 2xl:w-13 2xl:h-13">
-                    <button>
-                        <img className="w-5 h-5 xl:w-3.75 xl:h-3.75 2xl:w-6 2xl:h-6" src={item.icon} alt="Social Media Icon" />
+                   <button className="bg-gray-08 rounded-full p-[clamp(12px,calc(12px+8*(100vw-320px)/70),20px)] xl:p-2.5 2xl:p-3.5">
+                        <img className="w-5 2xl:w-6" src={item.icon} alt="Social Media Icon" />
                     </button>
-                    </div>
                 )
             })}
         </div>
@@ -71,3 +70,4 @@ const Footer = (footerProps : FooterInterface) => {
 }
 
 export default Footer
+
