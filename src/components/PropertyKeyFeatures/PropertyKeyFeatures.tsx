@@ -9,8 +9,8 @@ const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesProps) => {
 
       <div className="border border-gray-15 rounded-xl leading-[150%] p-5 xl:p-10 h-max  2xl:p-12.5 lg:w-[49%]">
         <div className="mb-5 xl:mb-10 2xl:mb-12.5   ">
-        <h2 className=" font-semibold text-[18px] xl:text-[20px] mb-1.5 xl:mb-2.5 2xl:mb-3.5 2xl:text-[24px]">{card.card.title}</h2>
-        <p className="text-gray-60 text-[14px] xl:text-[16px] 2xl:text-[18px]">{card.card.description}</p>
+         <h2 className=" font-semibold text-[18px] xl:text-[20px] mb-1.5 xl:mb-2.5 2xl:mb-3.5 2xl:text-[24px]">{card.card.title}</h2>
+         <p className="text-gray-60 text-[14px] xl:text-[16px] 2xl:text-[18px]">{card.card.description}</p>
         </div>
 
         <div className="relative grid grid-cols-2 grid-rows-2 divide-y sm:divide-y-0 divide-gray-300 border-t sm:flex sm:divide-x sm:divide-gray-25 sm:justify-between border-gray-15  sm:pt-3 xl:pt-4 2xl:pt-7 ">
@@ -20,11 +20,11 @@ const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesProps) => {
               <div className={`relative flex flex-col  last:odd:col-span-2  first:after:absolute first:after:right-0 first:after:top-1/4   first:after:h-13.5  first:after:w-px  first:after:bg-gray-15  first:after:sm:w-0 
                  border-gray-15 pl-4 my-auto py-5 sm:py-0  md:px-2.5 lg:px-0  sm:w-[30%]   `}>
  
-                <div className="flex 2xl:mb-2.5 gap-1 2xl:gap-[7px]">
-                  
-                <img className="h-5 w-5 2xl:h-6 2xl:w-6" src={item.icon}></img>
-                <h3 className="text-gray-60 text-[14px] xl:text-[14px] 2xl:text-[18px]">{item.name}</h3>
+                <div className="flex 2xl:mb-2.5 gap-1 2xl:gap-1.75">
+                 <img className="h-5 w-5 2xl:h-6 2xl:w-6" src={item.icon}></img>
+                 <h3 className="text-gray-60 text-[14px] xl:text-[14px] 2xl:text-[18px]">{item.name}</h3>
                 </div>
+                
                 <p className="  text-[18px] xl:text-[20px] xl:w-max font-semibold  2xl:text-[24px]">{item.value}</p>
               </div>
             )
