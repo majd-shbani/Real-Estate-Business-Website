@@ -33,7 +33,3 @@ const Root: React.FC = () => {
 }
 export default Root
 
-
-/* bg-[#c4c2c2]
-bg-[#5e5e5e] 
-bg-[#6b6b6b]*/
