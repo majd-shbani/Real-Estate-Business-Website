@@ -23,7 +23,7 @@ const Root: React.FC = () => {
         setStatus((prev) => (prev === "dark" ? "light" : "dark"))
     }
     return (
-        <div className={`${status} dark:bg-gray-08 dark:text-white bg-[#DCD0FF] text-gray-08`}>
+        <div className={`${status} dark:bg-gray-08 dark:text-white bg-[#b4b1b1] text-gray-08`}>
             <Nav status={status} toggleMood={editStatusHandle} /> 
             <Outlet/>
             <StartJourney journeyProps={journeyProps} />
@@ -33,3 +33,7 @@ const Root: React.FC = () => {
 }
 export default Root
 
+
+/* bg-[#c4c2c2]
+bg-[#5e5e5e] 
+bg-[#6b6b6b]*/
