@@ -44,7 +44,7 @@ const FeaturedCard = ({ id, image, alt, title, description, details, price, cate
                                     <p className="text-[14px] 2xl:text-[18px] font-medium text-gray-60">Price</p>
                                     <p className="text-[18px] xl:text-[20px] 2xl:text-[24px] font-semibold">{`$${price}`}</p>
                               </div>
-                              <Button text="View Property Details" to={`/propertyDetails/${id}`} className="text-[clamp(12px,0.824vw,18px)]! bg-purple-60 text-white px-[2.24vw] xl:px-[3.3104vw]! 2xl:px-[2.83vw]! " />
+                              <Button text="View Property Details" to={`/propertyDetails/${id}`} className="text-[clamp(12px,0.824vw,18px)]! dark:bg-purple-60 dark:text-white px-[2.24vw] xl:px-[3.3104vw]! 2xl:px-[2.83vw]! border border-[#c0c0c0]! bg-[#e8e8e8] text-[#3e3e42]" />
                         </div>
                   </div>
             </BaseCard>

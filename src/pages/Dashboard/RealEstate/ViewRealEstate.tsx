@@ -31,8 +31,7 @@ const ViewRealEstate = () => {
       }
 
       return (
-            <div className=" flex flex-col gap-4 lg:gap-6 xl:gap-8 max-w-7xl mx-auto text-white">
-
+            <div className=" flex flex-col gap-4 lg:gap-6 xl:gap-8 text-whit">
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row justify-between items-start md:items-center gap-4 mb-0!">
                         <div>
@@ -78,7 +77,7 @@ const ViewRealEstate = () => {
                         </div>
 
                   </div>
-                  
+
                   {/* Description & Specs*/}
                   <BaseCard className="p-5! xl:p-10! 2xl:p-12.5!  bg-gray-10 mb-0!">
                         <h3 className="text-xl font-bold mb-4">Description</h3>
