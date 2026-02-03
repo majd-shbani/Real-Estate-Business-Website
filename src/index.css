@@ -33,8 +33,10 @@
       /* main background*/
       --color-Alice-Blue: #f0f4f7;
       /* purple button */
-      --color-bg-Indigo: #4f46e5;
-      --color-border-Indigo: #3730a3;
+         /* bg */
+      --color-Indigo: #4f46e5;
+         /* border */
+      --color-Royal-Indigo: #3730a3;
 }
 
 
