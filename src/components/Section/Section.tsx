@@ -31,7 +31,7 @@ const Section = ({
                 buttonText={buttonText}
                 to={to}
                 showStars={showStars}
-                className={` ${headerClassName || ''}`}
+                className={`mb-10 xl:mb-15 2xl:mb-20 ${headerClassName || ''}`}
               
             />
             

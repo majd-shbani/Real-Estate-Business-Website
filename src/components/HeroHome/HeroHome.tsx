@@ -75,7 +75,7 @@ const HeroHome = () => {
                 </div>
 
             </div>
-            <div className="border-t border-b border-gray-15 shadow-thin-grey xl:shadow-[0px_0px_0px_10px_#191919] mb-20 xl:mb-30 2xl:mb-37.5 mt-10 xl:mt-0 ">
+            <div className="border-t border-b dark:border-gray-15 border-Silver dark:shadow-thin-grey dark:xl:shadow-[0px_0px_0px_10px_#191919] xl:shadow-[0px_0px_0px_10px_#c0c0c0]  mb-20 xl:mb-30 2xl:mb-37.5 mt-10 xl:mt-0 ">
 
             <InfoGrid/> 
             </div>
