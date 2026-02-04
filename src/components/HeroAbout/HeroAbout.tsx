@@ -8,8 +8,9 @@ const HeroAbout = ({img, alt}: HeroAboutProps) => {
             <Section className="xl:w-[59.3229vw]! mb-0! xl:pr-0! shrink-90" title="Our Journey" description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.">
                 <StatisticeSection className="[&>div]:py-[18px] [&>div]:xl:p-5 [&>div]:2xl:p-6 [&>div]:px-4"/>
             </Section>
-            <div className="w-[91.7948vw] xl:w-[42.3611vw] 2xl:w-[39.3229vw] mx-auto xl:mb-0 xl:mx-0">
-                <img className="w-full" src={img} alt={alt} />
+            <div className="w-[91.7948vw] xl:w-[42.3611vw] 2xl:w-[39.3229vw] mx-auto xl:mb-0 xl:mx-0 relative flex justify-center items-center">
+                <img src="/assets/images/abstractDesignAboutUs.webp" alt="abstractDesignAboutUs img" className=" absolute opacity-40 rounded-xl" />
+                <img src={img} alt={alt} className=" relative rounded-xl" />
             </div>
         </div>
     )
