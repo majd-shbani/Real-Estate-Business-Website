@@ -87,7 +87,7 @@ const SliderMovement = <T extends { id?: string | number }>({
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className="flex justify-between items-center pt-4 2xl:pt-5 border-t border-gray-15 w-full">
+            <div className="flex justify-between items-center pt-4 2xl:pt-5 border-t dark:border-gray-15 border-Silver w-full">
                 <div className="hidden xl:block">
                     <SlideCounter />
                 </div>
@@ -97,8 +97,8 @@ const SliderMovement = <T extends { id?: string | number }>({
                         disabled={isAtStart} 
                         aria-label="Previous slide"
                         className={`transition-all border border-gray-15 rounded-full w-11 h-11 2xl:w-14.5 2xl:h-14.5 flex items-center justify-center
-                            ${isAtStart ? 'bg-gray-10 cursor-not-allowed opacity-50' : 'bg-gray-15 hover:bg-purple-60 hover:border-none active:scale-95'}`}>
-                        <IoArrowBackOutline className={`w-6 h-6 2xl:w-7.5 2xl:h-7.5 ${isAtStart ? 'text-gray-40' : 'text-white'}`}/>
+                            ${isAtStart ? 'bg-gray-10 cursor-not-allowed opacity-50' : 'dark:bg-gray-15 bg-Platinum  hover:bg-purple-60 hover:border-none active:scale-95'}`}>
+                        <IoArrowBackOutline className={`w-6 h-6 2xl:w-7.5 2xl:h-7.5 ${isAtStart ? 'text-gray-40' : 'dark:text-white text-Jet-Gray'}`}/>
                     </button>
                     <div className="block xl:hidden ">
                         <SlideCounter />
@@ -108,8 +108,8 @@ const SliderMovement = <T extends { id?: string | number }>({
                         disabled={isAtEnd} 
                         aria-label="Next slide"
                         className={`transition-all border border-gray-15 rounded-full w-11 h-11 2xl:w-14.5 2xl:h-14.5 flex items-center justify-center
-                            ${isAtEnd ? 'bg-gray-10 cursor-not-allowed opacity-50' : 'bg-gray-15 hover:bg-purple-60 hover:border-none active:scale-95'}`}>
-                        <IoMdArrowForward className={`w-6 h-6 2xl:w-7.5 2xl:h-7.5 ${isAtEnd ? 'text-gray-40' : 'text-white'}`} />
+                            ${isAtEnd ? 'bg-gray-10 cursor-not-allowed opacity-50' : 'dark:bg-gray-15 bg-Platinum  hover:bg-purple-60 hover:border-none active:scale-95'}`}>
+                        <IoMdArrowForward className={`w-6 h-6 2xl:w-7.5 2xl:h-7.5 ${isAtEnd ? 'text-gray-40' : 'dark:text-white text-Jet-Gray'}`} />
                     </button>
                 </div>
             </div>
