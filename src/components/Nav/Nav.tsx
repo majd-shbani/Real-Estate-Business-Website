@@ -32,7 +32,7 @@ const Nav : React.FC<NavProps> = ({ toggleMood }) => {
     }
 
     return (
-        <nav className={`fixed top-0 w-full z-100  bg-gray-10   text-gray-08`}>
+        <nav className={`fixed top-0 w-full z-100 bg-Platinum  dark:bg-gray-10 text-gray-08`}>
                                            {/* top Panner */}
             {showBanner && (
                 <div className="h-19.5 xl:h-full pt-10 pb-5 xl:py-3.5 2xl:py-4.5 relative ps-4 md:ps-[5.208333vw] pe-12 xl:px-0  bg-[url(assets/images/navBG.webp)] bg-cover bg-center">
