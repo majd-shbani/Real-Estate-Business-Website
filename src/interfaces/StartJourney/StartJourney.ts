@@ -11,6 +11,7 @@ export interface JourneyProps {
     rightImage : string
     leftImage : string
     button : ButtonProps
+    starbg?: string
 }
 
 export interface StartJourneyProps {

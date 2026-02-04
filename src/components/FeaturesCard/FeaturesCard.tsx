@@ -21,7 +21,7 @@ const FeaturesCard = ({ icon, title, link }: FeaturesCardProps) => {
             onClick={handleClick}
             className={`
             relative dark:bg-gray-10 bg-Platinum rounded-[10px] py-5 px-3.5 xl:px-4 xl:py-7.5 2xl:py-10 2xl:px-5 border
-            dark:border-gray-15 hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full
+            dark:border-gray-15 border-Silver hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full
             ${link ? 'cursor-pointer' : ''}
             `}
         >

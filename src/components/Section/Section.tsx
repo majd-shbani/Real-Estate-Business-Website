@@ -11,6 +11,8 @@ interface SectionProps {
     className?: string;
     showStars?: boolean;
     headerClassName?: string;
+    starbg?: string;
+
 }
 
 const Section = ({ 
@@ -21,7 +23,8 @@ const Section = ({
     children,
     className,
     showStars = true,
-    headerClassName
+    headerClassName,
+    starbg
 }: SectionProps) => {
     return (
         <section className={`w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-15.25 xl:mb-22.5 2xl:mb-27.5 relative ${className || ''}`}>
@@ -32,7 +35,7 @@ const Section = ({
                 to={to}
                 showStars={showStars}
                 className={`mb-10 xl:mb-15 2xl:mb-20 ${headerClassName || ''}`}
-              
+                starbg={starbg}
             />
             
             {children}
