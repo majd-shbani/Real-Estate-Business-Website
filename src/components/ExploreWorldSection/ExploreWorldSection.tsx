@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader/SectionHeader"
 const ExploreWorldSection = ({images} : ExploreImg) => {
     return (
         <div className="px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]">
-            <div className="w-full mx-auto mb-15.25 xl:mb-22.5 2xl:mb-27.5 p-6 md:p-10 xl:p-15 2xl:p-20 bg-[url(assets/images/EploreBGDesign.webp)] dark:bg-gray-10 bg-Platinum bg-cover bg-center rounded-xl grid grid-cols-4 gap-2.5 xl:gap-5 ">
+            <div className="w-full border dark:border-gray-15 border-Silver mx-auto mb-15.25 xl:mb-22.5 2xl:mb-27.5 p-6 md:p-10 xl:p-15 2xl:p-20 bg-[url(assets/images/EploreBGDesign.webp)] dark:bg-gray-10 bg-Platinum bg-cover bg-center rounded-xl grid grid-cols-4 gap-2.5 xl:gap-5 ">
                 {images.map((img  , index) => {
                     let spanClass = ""
                     let orderClass = ""
@@ -23,8 +23,8 @@ const ExploreWorldSection = ({images} : ExploreImg) => {
                         <img className={`${spanClass} ${orderClass} w-full`} key={index} src={img.src} alt={img.alt} />
                     )
                 })}
-                <div className="col-span-4 xl:col-span-2 order-6">
-                    <SectionHeader title="Explore Estatein's World" className="mb-0! xl:mb-0 2xl:mb-0! mt-6 xl:mt-2 nth-[1]:gap-0!"
+                <div className="col-span-4 xl:col-span-2 order-6 ">
+                    <SectionHeader title="Explore Estatein's World" className="mb-0! xl:mb-0 2xl:mb-0! mt-3.75 xl:mt-2.5 2xl:mt-4 nth-[1]:gap-0!"
                     description="Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better."/>
                 </div>
             </div>
