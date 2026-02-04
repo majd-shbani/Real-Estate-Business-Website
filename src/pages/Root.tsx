@@ -23,7 +23,7 @@ const Root: React.FC = () => {
         setStatus((prev) => (prev === "dark" ? "light" : "dark"))
     }
     return (
-        <div className={`${status} dark:bg-gray-08 dark:text-white bg-[#b4b1b1] text-gray-08`}>
+        <div className={`${status} dark:bg-gray-08 dark:text-white bg-Alice-Blue text-gray-08`}>
             <Nav status={status} toggleMood={editStatusHandle} /> 
             <Outlet/>
             <StartJourney journeyProps={journeyProps} />
