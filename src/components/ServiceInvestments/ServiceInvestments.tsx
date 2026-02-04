@@ -10,7 +10,7 @@ import UnblockCard from "../UnblockCard/UnblockCard"
 const ServiceInvestments = () => {
   return (
   
-    <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5 ">
+    <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5 ">
      
       <div className="flex flex-col gap-10 xl:gap-12.5 2xl:gap-15 xl:flex-row ">
      

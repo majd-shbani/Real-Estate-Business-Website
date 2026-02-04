@@ -9,7 +9,7 @@ const Footer = (footerProps : FooterInterface) => {
   return (
     <div className=" font-urbanist ">
           
-    <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75">
+    <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75">
       <div >
         <div className="flex 2xl:gap-2.5 gap-[7.25px] mb-5 2xl:mb-7.5">
            <img className="2xl:w-12 2xl:h-12 w-.5 h-8.5" src={footerProps.footerProps.imageIcon}></img>
