@@ -40,14 +40,9 @@ const FilterDropdown = ({ filter, selected, onSelect }: FilterDropdownProps) => 
                   
                         <img src={iconPath} alt="" className="w-5 h-5 2xl:w-6 2xl:h-6 bg-" />
                                    <span className=" border-l-2 border-gray-15 pl-2  text-sm 2xl:text-lg font-medium">
-                        {filter.label}
+                        {selected || filter.label}
                     </span>
                 </div>
-                {selected ? (
-                    <span className="text-xs 2xl:text-sm text-white/80 me-2 truncate max-w-32">
-                        {selected}
-                    </span>
-                ) : null}
 
                 <img 
                     src="./assets/icons/drop.svg" 
