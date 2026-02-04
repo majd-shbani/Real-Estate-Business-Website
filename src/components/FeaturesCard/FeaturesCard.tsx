@@ -20,8 +20,8 @@ const FeaturesCard = ({ icon, title, link }: FeaturesCardProps) => {
         <div 
             onClick={handleClick}
             className={`
-            relative bg-gray-10 rounded-[10px] py-5 px-3.5 xl:px-4 xl:py-7.5 2xl:py-10 2xl:px-5 border
-            border-gray-15 hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full
+            relative dark:bg-gray-10 bg-Platinum rounded-[10px] py-5 px-3.5 xl:px-4 xl:py-7.5 2xl:py-10 2xl:px-5 border
+            dark:border-gray-15 hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full
             ${link ? 'cursor-pointer' : ''}
             `}
         >
@@ -38,7 +38,7 @@ const FeaturesCard = ({ icon, title, link }: FeaturesCardProps) => {
                 
             </div>
 
-            <h3 className="text-white font-urbanist text-sm xl:text-base 2xl:text-xl font-semibold text-center text-leading-[150%]">
+            <h3 className="dark:text-white font-urbanist text-sm xl:text-base 2xl:text-xl font-semibold text-center text-leading-[150%]">
 
                 {title}
                 

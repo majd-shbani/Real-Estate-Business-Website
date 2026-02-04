@@ -10,7 +10,7 @@ const FaqCard = ({card}: FaqCardProps) => {
         <h3 className="text-lg xl:text-xl 2xl:text-2xl leading-[150%] font-semibold line-clamp-2 min-h-[calc(1.5em*2)]">{card.title}</h3>
         <p className="text-sm xl:text-base 2xl:text-lg leading-[150%] text-gray-60 font-medium">{card.subTitle}</p>
         <div className="mt-auto">
-          <Button text={ButtonData.text} className="w-full xl:w-auto bg-gray-10 leading-[131%] tracking-[-0.006em]"/>
+          <Button text={ButtonData.text} className="w-full xl:w-auto bg-Platinum dark:bg-gray-10 border-Silver! dark:border-gray-15! leading-[131%] tracking-[-0.006em]"/>
         </div>
     </BaseCard>
   )

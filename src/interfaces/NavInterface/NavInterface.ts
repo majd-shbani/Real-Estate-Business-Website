@@ -8,4 +8,5 @@ export interface NavItem {
 
 export interface Nav {
     items : NavItem[]
+    onItemClick?: () => void
 }
