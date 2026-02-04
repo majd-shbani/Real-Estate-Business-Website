@@ -57,7 +57,7 @@ const SliderMovement = <T extends { id?: string | number }>({
     }
 
     const SlideCounter = () => (
-        <span className="font-medium text-base 2xl:text-xl text-white">
+        <span className="font-medium text-base 2xl:text-xl dark:text-white text-Jet-Gray">
             {String(currentIndex).padStart(2, '0')} 
             <span className="text-gray-60">
                 {' '}of {String(data.length).padStart(2, '0')}
