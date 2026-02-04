@@ -5,10 +5,11 @@ import type {  FooterInterface } from "../../interfaces/Footer/Footer"
 
 
 
+
 const Footer = (footerProps : FooterInterface) => {
   return (
-    <div className=" font-urbanist ">
-          
+    <div>
+                             {/*Footer */}
     <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75">
       <div >
         <div className="flex 2xl:gap-2.5 gap-[7.25px] mb-5 2xl:mb-7.5">
@@ -49,8 +50,10 @@ const Footer = (footerProps : FooterInterface) => {
         })}
       </div>
     </div>
+                                 
+                                 {/*Terms and Social Media */}
 
-    <div className="text-white bg-gray-10 flex flex-col-reverse  lg:flex-row  lg:justify-between font-medium  text-[14px] lg:px-31 xl:px-20 lg:h-17 2xl:text-[18px]  lg:flex w-full 2xl:h-26  2xl:px-40.5">
+    <div className="text-Jet-Gray dark:text-white bg-Platinum dark:bg-gray-10 flex flex-col-reverse  lg:flex-row  lg:justify-between font-medium  text-[14px] lg:px-31 xl:px-20 lg:h-17 2xl:text-[18px]  lg:flex w-full 2xl:h-26  2xl:px-40.5">
         <div className="text-center mb-5 lg:flex lg:my-2 lg:gap-5 2xl:gap-9.5 2xl:my-10 lg:items-center">
            <p className=" mb-2.5 lg:mb-0"> {footerProps.footerProps.copyright}</p>
            <p>{footerProps.footerProps.terms}</p>
@@ -58,8 +61,8 @@ const Footer = (footerProps : FooterInterface) => {
         <div className=" flex gap-2 items-center justify-center  2xl:gap-4 mx-15.5 sm:mx-auto py-5  xl:my-3.5 2xl:my-6.5 lg:mr-5 ">
             {footerProps.footerProps.socialMedia.map((item) => {
                 return (
-                   <button className="bg-gray-08 rounded-full p-[clamp(12px,calc(12px+8*(100vw-320px)/70),20px)] xl:p-2.5 2xl:p-3.5">
-                        <img className="w-5 2xl:w-6" src={item.icon} alt="Social Media Icon" />
+                   <button className="bg-Alice-Blue dark:bg-gray-08 rounded-full p-[clamp(12px,calc(12px+8*(100vw-320px)/70),20px)] xl:p-2.5 2xl:p-3.5">
+                        <img className=" invert dark:invert-0 w-5 2xl:w-6" src={item.icon} alt="Social Media Icon" />
                     </button>
                 )
             })}

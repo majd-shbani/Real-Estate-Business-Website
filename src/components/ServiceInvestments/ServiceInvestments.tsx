@@ -9,9 +9,9 @@ import UnblockCard from "../UnblockCard/UnblockCard"
 
 const ServiceInvestments = () => {
   return (
-  
-    <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5 ">
-     
+
+    <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] mb-20 xl:mb-30 2xl:mb-37.5 leading-[150%]">
+
       <div className="flex flex-col gap-10 xl:gap-12.5 2xl:gap-15 xl:flex-row ">
      
         <div className=" xl:w-[33%] flex flex-col gap-7.5 sm:gap-0">
@@ -27,7 +27,7 @@ const ServiceInvestments = () => {
           
         </div>
         
-        <div className="xl:w-[65%]  grid grid-cols-1 gap-2.5 border  border-gray-15 rounded-xl sm:grid-cols-2 lg:gap-2.5 xl:grid-cols-2 p-2.5 bg-gray-10">
+        <div className="xl:w-[65%]  grid grid-cols-1 gap-2.5 border border-Silver dark:border-gray-15 rounded-xl sm:grid-cols-2 lg:gap-2.5 xl:grid-cols-2 p-2.5 bg-Platinum dark:bg-gray-10">
           {ServiceInvestmentsData.cardsData.map((card) => {
             return (
               <div >
@@ -36,7 +36,7 @@ const ServiceInvestments = () => {
                image={card.image}
                title={card.title}
                description={card.description}
-               className=" lg:py-15 bg-[#ffffff] dark:bg-gray-08 "
+               className=" lg:py-15  "
               />
               </div>
             )
