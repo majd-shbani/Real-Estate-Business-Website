@@ -1,51 +1,51 @@
 export const DEFAULT_DATA = {
-    logo: "/assets/icons/Logo.svg",
-    profile: "/assets/images/profile.webp",
-    user: "Admin",
-    button: "Back To Home"
+      logo: "/assets/icons/Logo.svg",
+      profile: "/assets/images/profile.webp",
+      user: "Admin",
+      button: "Back To Home"
 }
 
 export const Links = [
-    {
-        text: "Real Estates",
-        href: "/dashboard"
-    },
-    {
-        text: "Employees",
-        href: "/dashboard/employees"
-    }
+      {
+            text: "Real Estates",
+            href: "/dashboard"
+      },
+      {
+            text: "Employees",
+            href: "/dashboard/employees"
+      }
 ]
 
 export const EmployeeFormInputs = [
-    {
-        id: 1,
-        name: "name",
-        label: "Full Name",
-        placeholder: "Full Name",
-        type: "text",
-        value: "",
-        onChange: () => {},
-        autoComplete: "name"
-    },
-    {
-        id: 2,
-        name: "position",
-        label: "Position",
-        placeholder: "Position",
-        type: "text",
-        value: "",
-        onChange: () => {},
-        autoComplete: "organization-title"
-    },
-    {
-        id: 3,
-        name: "image",
-        label: "Image URL",
-        placeholder: "e.g. https://example.com/photo.jpg",
-        type: "text",
-        value: "",
-        onChange: () => {},
-    }
+      {
+            id: 1,
+            name: "name",
+            label: "Full Name",
+            placeholder: "Full Name",
+            type: "text",
+            value: "",
+            onChange: () => { },
+            autoComplete: "name"
+      },
+      {
+            id: 2,
+            name: "position",
+            label: "Position",
+            placeholder: "Position",
+            type: "text",
+            value: "",
+            onChange: () => { },
+            autoComplete: "organization-title"
+      },
+      {
+            id: 3,
+            name: "image",
+            label: "Image URL",
+            placeholder: "e.g. https://example.com/photo.jpg",
+            type: "text",
+            value: "",
+            onChange: () => { },
+      }
 ]
 
 
@@ -79,6 +79,7 @@ export const basicInfoFields = [
             type: "text",
             placeholder: "e.g. Coastal Escapes"
       },
+      
 ];
 
 export const specsFields = [
@@ -105,6 +106,13 @@ export const specsFields = [
             type: "text",
             placeholder: "e.g. 2,500 sq ft"
       },
+      {
+            id: 22,
+            label: "Build Year",
+            name: "specs.buildYear",
+            type: "text",
+            placeholder: "2024",
+      }
 ];
 
 export const pricingConfig = [

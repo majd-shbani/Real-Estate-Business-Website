@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk,type PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
 import { db } from "../../firebaseConfig";
 import { ref, set, remove, update, runTransaction } from "firebase/database";
 
@@ -11,7 +11,9 @@ export interface Property {
       categoryBadge: string;
       mainImage: string;
       gallery: string[];
-      specs: { bedrooms: number; bathrooms: number; area: string; };
+      specs: {
+            bedrooms: number; bathrooms: number; area: string; buildYear: string;
+      };
       amenities: string[];
       pricing: {
             listingPrice: number;
@@ -20,23 +22,23 @@ export interface Property {
                   legalFees: number;
                   homeInspection: number;
                   propertyInsurance: number;
-                  mortgageFees: number; 
+                  mortgageFees: number;
             };
             monthlyCosts: {
                   propertyTaxes: number;
-                  hoaFees: number; 
+                  hoaFees: number;
             };
             totalInitialCosts: {
                   listingPrice: number;
-                  additionalFeesSum: number; 
-                  downPayment: number; 
-                  mortgageAmount: number; 
+                  additionalFeesSum: number;
+                  downPayment: number;
+                  mortgageAmount: number;
             };
             monthlyExpenses: {
                   propertyTaxes: number;
                   hoaFees: number;
-                  mortgagePayment: number; 
-                  propertyInsurance: number; 
+                  mortgagePayment: number;
+                  propertyInsurance: number;
             };
       };
 }
@@ -62,7 +64,7 @@ export const addProperty = createAsyncThunk("properties/addProperty", async (new
             const propertyData = { ...newProperty, id: newId.toString() };
             await set(ref(db, `properties/${newId}`), propertyData);
             return propertyData;
-      } catch (error: unknown) { 
+      } catch (error: unknown) {
             if (error instanceof Error) {
                   return rejectWithValue(error.message);
             }
