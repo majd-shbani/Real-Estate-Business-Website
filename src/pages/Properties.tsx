@@ -1,4 +1,4 @@
-import { useMemo, useEffect, useState } from "react"
+import { useMemo, useState } from "react"
 import { FeaturedSectionBase } from "../components/FeaturedSection/FeaturedSection"
 import HeroProperties, { type PropertiesFilters, type PropertiesFilterOptions } from "../components/HeroProperties/HeroProperties"
 import PropertyBookingSection from "../components/PropertyBookingSection/PropertyBookingSection"
@@ -60,7 +60,8 @@ const PropertyDetails = () => {
             };
       }, [properties, priceRanges]);
 
-      useEffect(() => {
+      const [prevFilterOptions, setPrevFilterOptions] = useState<PropertiesFilterOptions>(filterOptions);
+      if (prevFilterOptions !== filterOptions) {
             const sanitize = (prev: PropertiesFilters) => {
                   const next = { ...prev };
                   if (next.location && !filterOptions.locations.includes(next.location)) next.location = "";
@@ -71,17 +72,17 @@ const PropertyDetails = () => {
                   return next;
             };
 
+            setPrevFilterOptions(filterOptions);
             setPendingFilters((prev) => sanitize(prev));
             setAppliedFilters((prev) => sanitize(prev));
-      }, [filterOptions]);
-
-      const getPriceRangeLabel = (price: number) => {
-            const match = priceRanges.find((r) => price >= r.start && price <= r.end);
-            return match?.label;
-      };
+      }
 
       const filteredProperties = useMemo(() => {
             const search = appliedFilters.search.trim().toLowerCase();
+            const getPriceRangeLabel = (price: number) => {
+                  const match = priceRanges.find((r) => price >= r.start && price <= r.end);
+                  return match?.label;
+            };
 
             return properties.filter((p: Property) => {
                   if (search) {
