@@ -52,9 +52,7 @@ const SliderMovement = <T extends { id?: string | number }>({
     }, [data, updateNavigationState])
     if (!data || data.length === 0) {
         return (
-            <div className="w-full text-center py-8">
-                <p className="text-shadow-red-700">no data</p>
-            </div>
+           <p className="text-gray-60 text-center py-10">No featured properties found.</p>
         )
     }
 

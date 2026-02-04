@@ -2,13 +2,14 @@ import FeaturedCard from "../FeaturedCard/FeaturedCard";
 import Section from "../Section/Section";
 import { useProperties } from "../../pages/Dashboard/Hooks/Hooks";
 import SliderMovement from "../SliderMovement/SliderMovement";
+import type { Property } from "../../redux/slice/propertiesSlice";
 interface FeaturedSectionProps {
       viewMode?: "home" | "properties";
+      data?: Property[];
+      loading?: boolean;
 }
 
-const FeaturedSection = ({ viewMode }: FeaturedSectionProps) => {
-      const { properties, loading } = useProperties();
-
+export const FeaturedSectionBase = ({ viewMode, data = [], loading = false }: FeaturedSectionProps) => {
       return (
             <Section
                   title="Featured Properties"
@@ -19,7 +20,7 @@ const FeaturedSection = ({ viewMode }: FeaturedSectionProps) => {
                         <div className="text-white text-center py-10 text-2xl animate-pulse">Loading Properties...</div>
                   ) : (
                               <SliderMovement
-                                    data={properties}
+                                    data={data}
                                     renderItem={(item) => (
                                           <FeaturedCard
                                                 key={item.id}
@@ -41,10 +42,19 @@ const FeaturedSection = ({ viewMode }: FeaturedSectionProps) => {
                               />
                   )}
 
-                  {!loading && properties.length === 0 && (
-                        <p className="text-gray-60 text-center py-10">No featured properties found.</p>
-                  )}
+                 
             </Section>
+      );
+};
+
+const FeaturedSection = ({ viewMode, data, loading }: FeaturedSectionProps) => {
+      const { properties, loading: hookLoading } = useProperties();
+      return (
+            <FeaturedSectionBase
+                  viewMode={viewMode}
+                  data={data ?? properties}
+                  loading={loading ?? hookLoading}
+            />
       );
 };
 
