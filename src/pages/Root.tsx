@@ -12,18 +12,18 @@ import { useEffect, useState } from "react"
 
 const Root: React.FC = () => {
     const [status, setStatus] = useState<Theme>(() => {
-        const savedTheme = localStorage.getItem("theme") as Theme
-        return savedTheme || "dark"
+            const savedTheme = localStorage.getItem("theme") as Theme
+            return savedTheme || "dark"
     })
     useEffect(() => {
-        localStorage.setItem("theme", status)
+            localStorage.setItem("theme", status)
     }, [status])
 
     const editStatusHandle = (): void => {
         setStatus((prev) => (prev === "dark" ? "light" : "dark"))
     }
     return (
-        <div className={`${status} dark:bg-gray-08 dark:text-white bg-[#DCD0FF] text-gray-08`}>
+        <div className={`${status} dark:bg-gray-08 dark:text-white bg-Alice-Blue text-Jet-Gray`}>
             <Nav status={status} toggleMood={editStatusHandle} /> 
             <Outlet/>
             <StartJourney journeyProps={journeyProps} />

@@ -17,7 +17,7 @@ const getCleanPropertyData = (property: Property | null): Omit<Property, "id"> =
       mainImage: property?.mainImage || "",
       gallery: property?.gallery || [],
       amenities: property?.amenities || [],
-      specs: property?.specs || { bedrooms: 0, bathrooms: 0, area: "" },
+      specs: property?.specs || { bedrooms: 0, bathrooms: 0, area: "",buildYear:"" },
       pricing: {
             listingPrice: property?.pricing?.listingPrice || 0,
             additionalFees: property?.pricing?.additionalFees || {

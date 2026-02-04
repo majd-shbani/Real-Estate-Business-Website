@@ -3,7 +3,7 @@ import Section from "../Section/Section"
 
 const HeroServices = () => {
     return (
-        <div className="mt-36.25 xl:mt-31.25 2xl:mt-40.5 ">
+        <div className=" pt-41 ">
 
        
         <Section

@@ -30,7 +30,7 @@ const Values = () => {
 
     return (
         <div className="flex flex-col xl:flex-row items-center w-full
-            gap-5 lg:gap-20 2xl:gap-20
+            gap-5 lg:gap-15 2xl:gap-20
             px-4 lg:px-20 2xl:px-40.5
             py-12.5 2xl:py-15"> 
             
@@ -65,24 +65,26 @@ const Values = () => {
                         lg:pb-0 lg:border-b-0
                         ${index % 2 === 0 ? "lg:border-l-0" : "lg:border-l lg:border-gray-15 lg:pl-5"}`}
                         >
-                        <div className="flex items-center gap-5 ">
+                        <div className="flex items-center gap-5
+                        mb-3.5 lg:mb-4 2xl:mb-5
+                        ">
                              {/* Icon */}
                              <div className="
                                 rounded-[52px] border border-purple-60 
                                 flex items-center justify-center relative
                                 shrink-0
                                 p-3.5 lg:p-4 2xl:p-5 gap-2.5
-                                mb-3.5 lg:mb-4 2xl:mb-5
+                                
                              ">
                                 <img 
                                     src={item.icon} 
                                     alt={item.title} 
-                                    className="relative  "
+                                    className=" relative w-6 h-6 lg:w-7 lg:h-7 2xl:w-8.5 2xl:h-8.5 "
                                 />
                              </div>
                              <h3 className="text-lg lg:text-xl 2xl:text-2xl font-semibold ">{item.title}</h3>
                         </div>
-                        <p className=" text-sm lg:text-base 2xl:text-lg line-height-[150%]">
+                        <p className=" text-sm lg:text-base 2xl:text-lg leading-[150%] text-gray-60 ">
                             {item.description}
                         </p>
                     </div>

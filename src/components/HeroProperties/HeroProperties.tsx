@@ -3,11 +3,11 @@ import FilterDropdown, { filterData } from "./FilterDropdown";
 
 const HeroProperties = () => {
     return (
-        <div className="mt-12.5 2xl:my-40.5">
+        <div className=" pt-41">
             <Section
                 title="Find Your Dream Property"
                 description="Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey"
-                className="bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] text-white mb-0! pt-30 pb-10"
+                className="bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] text-white mb-0! px-4 py-12.5  lg:pr-50 lg:pl-20 lg:pt-25 lg:pb-32.5   2xl:pt-37.5 2xl:pb-40 2xl:pr-100 2xl:pl-40.5"
                 showStars={false}
             />
        
