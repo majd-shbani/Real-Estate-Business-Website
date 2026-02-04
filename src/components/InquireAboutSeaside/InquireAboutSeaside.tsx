@@ -18,7 +18,7 @@ const InquireAboutSeaside = () => {
         };
 
     return (
-        <section className="px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] my-20 xl:my-30 2xl:my-[150px] flex flex-col justify-between xl:flex-row">
+        <section className="px-4 md:px-[5.208333vw] lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] my-20 xl:my-30 2xl:my-[150px] flex flex-col justify-between xl:flex-row">
             <Section title="Inquire About Seaside Serenity Villa"
                     description="Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have."
                     className="xl:w-[27.0312vw]! px-0! m-0!"
