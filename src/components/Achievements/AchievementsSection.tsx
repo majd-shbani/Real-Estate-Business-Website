@@ -12,7 +12,7 @@ const AchievementsSection = () => {
       <Section title={achievementHeader.title} 
       description={achievementHeader.description} 
       children={
-        <div className="flex flex-col  items-center justify-center gap-5 sm:flex-row xl:gap-7.5 2xl:gap-10 ">
+        <div className="flex flex-col  items-center justify-center gap-5 lg:flex-row xl:gap-7.5 2xl:gap-10 leading-[150%]">
           {achievementsData.map((item) => {
             return (
               <Achievement 

@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 
 const ValuedClientCard = ({ card }: ValuedClientProps) => {
       return (
-            <BaseCard className='p-6! xl:p-10! 2xl:p-12.5! flex flex-col gap-7.5 2xl:gap-10 shadow-medium-grey xl:shadow-thick-grey leading-[150%] sm:max-w-122.5 sm:m-auto md:max-w-full h-full'>
+            <BaseCard className='p-6! xl:p-10! 2xl:p-12.5! flex flex-col gap-7.5 2xl:gap-10 shadow-[0px_0px_0px_10px_#d4d4d4] dark:shadow-medium-grey dark:xl:shadow-thick-grey leading-[150%] sm:max-w-122.5 sm:m-auto md:max-w-[98%] h-[97%]'>
                   <div>
                         <div className='flex flex-col xl:flex-row justify-between gap-5'>
                               <div>
@@ -35,7 +35,7 @@ const ValuedClientCard = ({ card }: ValuedClientProps) => {
                         </div>
                   </div>
 
-                  <div className='p-5 xl:p-6 2xl:p-7.5 border border-gray-15 rounded-xl font-medium flex-1'>
+                  <div className='p-5 xl:p-6 2xl:p-7.5 border border-Silver dark:border-gray-15 rounded-xl font-medium flex-1'>
                         <p className='text-[14px] xl:text-[16px] 2xl:text-[18px] text-gray-60 mb-2 xl:mb-2.5 2xl:mb-3.5 leading-[150%]'>What They Said 🤗</p>
                         <p className='text-sm xl:text-base 2xl:text-lg leading-[150%]'>{card.feedback}</p>
                   </div>

@@ -9,7 +9,7 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
 
       return (
             <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] pt-51.5 2xl:pt-70.5 mb-5 2xl:mb-7.5">
-
+                  
                   {/* 1. Header Section */}
                   <div className="flex flex-col gap-2.5 xl:flex-row xl:gap-5 xl:items-center mb-7.5 xl:mb-10 2xl:mb-12.5">
                         <h2 className="text-[20px] xl:text-[24px] 2xl:text-[30px] font-semibold text-nowrap">{property.title}</h2>
@@ -65,7 +65,7 @@ const PropertyDetailsHeader = ({ property }: PropsDetails) => {
 
                         <div className="flex justify-between md:justify-center items-center w-full mt-5 2xl:mt-7.5 gap-4 p-2 2xl:p-2.5 dark:bg-gray-08 bg-Alice-Blue sm:w-fit mx-auto rounded-[100px]">
                               <button onClick={() => setActiveIndex(prev => prev > 0 ? prev - 1 : 0)} className="p-2.5 2xl:p-3.5 border dark:border-gray-15 border-Silver rounded-full">
-                                    <img src="/assets/icons/arrow-left-Icon.svg" alt="arrow-left-Icon" className="invert-0 w-6 h-6 2xl:w-7.5 2xl:h-7.5 "/>
+                                    <img src="/assets/icons/arrow-left-Icon.svg" alt="arrow-left-Icon" className="invert-0 w-6 h-6 2xl:w-7.5 2xl:h-7.5 " />
                               </button>
 
                               <PaginationDots

@@ -7,7 +7,7 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
   return (
     <div className={`flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 ${showAction ? 'cursor-pointer' : ''}`} onClick={showAction ? onActionClick : undefined}>
         <label htmlFor={input.name} className={`font-semibold leading-[150%] xl:text-base 2xl:text-xl ${input.hideLabel ? 'hidden md:block md:invisible' : ''}`}>{input.label || '\u00A0'}</label>
-        <div className={`flex items-center gap-1.5 2xl:gap-3 bg-gray-10 border border-gray-15 rounded-md 2xl:rounded-lg px-5 py-4 2xl:py-6 ${className}`}>
+        <div className={`flex items-center gap-1.5 2xl:gap-3 bg-Platinum dark:bg-gray-10 border border-Silver dark:border-gray-15 rounded-md 2xl:rounded-lg px-5 py-4 2xl:py-6 ${className}`}>
           {input.icon && <img src={input.icon} alt={input.alt} className="w-5 2xl:w-6" />}
 
           {input.type === "select" ? (
@@ -29,7 +29,7 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
                 ))}
               </select>
               <div className="pointer-events-none absolute right-0 flex items-center text-gray-40">
-                <img src="assets/icons/drop.svg" alt="arrow-icon" className="w-5 h-5 2xl:w-full" />
+                <img src="/assets/icons/drop.svg" alt="arrow-icon" className="w-5 h-5 2xl:w-full" />
               </div>
             </div>
             
@@ -52,9 +52,9 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
           )}
           {showAction && (
             <div
-              className={`w-2.5 h-2.5 2xl:w-4 2xl:h-4 border border-purple-60 rounded-full transition-all shrink-0
+              className={`w-2.5 h-2.5 2xl:w-4 2xl:h-4 border border-Indigo dark:border-purple-60 rounded-full transition-all shrink-0
                 ${isActive 
-                  ? 'bg-purple-60' 
+                  ? 'bg-Indigo dark:bg-purple-60' 
                   : 'bg-transparent'
                 }`}
             />

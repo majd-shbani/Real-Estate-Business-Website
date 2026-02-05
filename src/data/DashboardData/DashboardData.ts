@@ -55,7 +55,7 @@ export const basicInfoFields = [
             label: "Property Name",
             name: "name",
             type: "text",
-            placeholder: "Villa Name"
+            placeholder: "Villa Name",
       },
       {
             id: 2,
@@ -70,7 +70,7 @@ export const basicInfoFields = [
             name: "type",
             type: "select",
             options: ["Villa", "Apartment", "Penthouse"],
-            placeholder: "Select Type"
+            placeholder: "Select Type",
       },
       {
             id: 4,

@@ -33,7 +33,7 @@ const HeroContact = () => {
     ];
 
     return (
-        <div className="mt-36.25 xl:mt-31.25 2xl:mt-40.5 ">
+        <div className=" pt-41 ">
             <Section
                 title="Get in Touch with Estatein"
                 description="Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests, or feedback you may have. Whether you're looking to buy or sell a property, explore investment opportunities, or simply want to connect, we're just a message away. Reach out to us, and let's start a conversation."
@@ -42,7 +42,7 @@ const HeroContact = () => {
                 headerClassName="mb-0!"
             />
         
-  <div className="border-t border-b border-gray-15 shadow-thin-grey xl:shadow-[0px_0px_0px_10px_#191919] mb-20 xl:mb-30 2xl:mb-37.5 mt-10 xl:mt-0  ">
+  <div className="border-t border-b dark:border-gray-15 border-Silver dark:shadow-thin-grey dark:xl:shadow-[0px_0px_0px_10px_#191919] xl:shadow-[0px_0px_0px_10px_#c0c0c0]  mb-20 xl:mb-30 2xl:mb-37.5 mt-10 xl:mt-0  ">
             <InfoGrid items={contactInfoItems} />
             </div>
          </div>

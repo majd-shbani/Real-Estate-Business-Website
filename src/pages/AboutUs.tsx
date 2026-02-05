@@ -13,7 +13,7 @@ import Values from "../components/Values/Values"
 const AboutUs = () => {
     return (
         <div> 
-            <HeroAbout img="assets/images/heroAbout.webp" alt="Hero Image About Page"/> 
+            <HeroAbout img="/assets/images/heroAoutUs.webp" alt="Hero Image About Page"/> 
             <Values/>
             <AchievementsSection/>
             <NavigationSection/>

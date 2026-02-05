@@ -19,93 +19,103 @@ import ViewRealEstate from './pages/Dashboard/RealEstate/ViewRealEstate'
 import RealEstateForm from './pages/Dashboard/RealEstate/RealEstateForm'
 import EmployeeForm from './pages/Dashboard/Employees/EmployeeForm'
 import SplashScreen from './components/SplashScreen/SplashScreen'
+import PropertyMain from './pages/PropertyMain'
 
 
 
 
 const routes = createBrowserRouter([
-  {
-    path :"/",
-    element : <Root /> ,
-    children :[{
-      path : "" ,
-      element : <Home/>
-    },
-    {
-      path : "aboutUs" ,
-      element : <AboutUs/>
-    },
-    {
-      path : "Properties" ,
-      element : <Properties/>
-    },
-    {
-      path : "propertyDetails/:id" ,
-      element : <PropertyDetails/>
-    },
-    {
-      path : "services" ,
-      element : <Services/>
-    },
-    {
-      path : "contact" ,
-      element : <Contact/>
-    },
-  ]},
-  {
-    path: "dashboard",
-    element: <Dashboard links={Links}/>,
-    children: [{
-      index: true,
-      element: <ListRealEstates />
-    },
-    {
-      path: "real-estate/create",
-      element: <RealEstateForm />
-    },
-    {
-      path: "real-estate/:id",
-      element: <ViewRealEstate />
-    },
-    {
-      path: "real-estate/:id/edit",
-      element: <RealEstateForm />
-    },
-    {
-      path: "employees",
-      element: <ListEmployees />
-    },
-    {
-      path: "employees/create",
-      element: <EmployeeForm />
-    },
-    {
-      path: "employees/:id/edit",
-      element: <EmployeeForm />
-    },
-  ]}
+      {
+            path: "/",
+            element: <Root />,
+            children: [{
+                  path: "",
+                  element: <Home />
+            },
+            {
+                  path: "aboutUs",
+                  element: <AboutUs />
+            },
+            {
+                  path: "Properties",
+                  element: <PropertyMain />,
+                  children: [
+                        {
+                              path: "",
+                              element: <Properties />
+                        },
+                        {
+                              path: "propertyDetails/:id",
+                              element: <PropertyDetails />
+                        },
+                  ]
+            },
+
+            {
+                  path: "services",
+                  element: <Services />
+            },
+            {
+                  path: "contact",
+                  element: <Contact />
+            },
+            ]
+      },
+      {
+            path: "dashboard",
+            element: <Dashboard links={Links} />,
+            children: [{
+                  index: true,
+                  element: <ListRealEstates />
+            },
+            {
+                  path: "real-estate/create",
+                  element: <RealEstateForm />
+            },
+            {
+                  path: "real-estate/:id",
+                  element: <ViewRealEstate />
+            },
+            {
+                  path: "real-estate/:id/edit",
+                  element: <RealEstateForm />
+            },
+            {
+                  path: "employees",
+                  element: <ListEmployees />
+            },
+            {
+                  path: "employees/create",
+                  element: <EmployeeForm />
+            },
+            {
+                  path: "employees/:id/edit",
+                  element: <EmployeeForm />
+            },
+            ]
+      }
 ]
 )
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
-    return () => clearTimeout(timer)
-  }, [])
-  return (
-    <>
-      {isLoading && <SplashScreen />}
-      <RouterProvider router={routes} />
-    </>
-  )
+      const [isLoading, setIsLoading] = useState(true)
+      useEffect(() => {
+            const timer = setTimeout(() => {
+                  setIsLoading(false)
+            }, 2000)
+            return () => clearTimeout(timer)
+      }, [])
+      return (
+            <>
+                  {isLoading && <SplashScreen />}
+                  <RouterProvider router={routes} />
+            </>
+      )
 }
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode >
-    <Provider store={store}>
-      <App/>
-    </Provider>
-  </StrictMode>,
+      <StrictMode >
+            <Provider store={store}>
+                  <App />
+            </Provider>
+      </StrictMode>,
 )

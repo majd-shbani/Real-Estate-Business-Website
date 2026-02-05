@@ -1,16 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface FeaturesCardProps {
     icon: string;
     title: React.ReactNode;
+    link?: string;
 }
 
-const FeaturesCard = ({ icon, title }: FeaturesCardProps) => {
+const FeaturesCard = ({ icon, title, link }: FeaturesCardProps) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        if (link) {
+            navigate(link);
+        }
+    };
+
     return (
-        <div className="
-        
-        relative bg-gray-10 rounded-[10px] py-5 px-3.5 xl:px-4 xl:py-7.5 2xl:py-10 2xl:px-5 border
-         border-gray-15 hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full">
+        <div 
+            onClick={handleClick}
+            className={`
+            relative dark:bg-gray-10 bg-Platinum rounded-[10px] py-5 px-3.5 xl:px-4 xl:py-7.5 2xl:py-10 2xl:px-5 border
+            dark:border-gray-15 hover:border-purple-60 transition-all duration-300 group flex flex-col items-center justify-center h-full
+            ${link ? 'cursor-pointer' : ''}
+            `}
+        >
         
             <div className="absolute 2xl:p-[6.37px] top-5 right-5 ">
                 <img src="./assets/icons/Arrow.svg" alt="arrow-icon" width={21.25} height={21.25} className="" />
@@ -24,7 +38,7 @@ const FeaturesCard = ({ icon, title }: FeaturesCardProps) => {
                 
             </div>
 
-            <h3 className="text-white font-urbanist text-sm xl:text-base 2xl:text-xl font-semibold text-center text-leading-[150%]">
+            <h3 className="dark:text-white font-urbanist text-sm xl:text-base 2xl:text-xl font-semibold text-center text-leading-[150%]">
 
                 {title}
                 

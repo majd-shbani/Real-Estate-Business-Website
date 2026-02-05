@@ -8,6 +8,7 @@ import UnlockProperty from "../components/UnlockProperty/UnlockProperty"
 
 
 
+
 const Services = () => {
     return (
         <div>
@@ -15,6 +16,7 @@ const Services = () => {
             <UnlockProperty/>
             <EffortlessProperty/>
             <ServiceInvestments />
+            
         </div>
     )
 }
