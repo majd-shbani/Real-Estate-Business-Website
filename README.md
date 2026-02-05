@@ -11,7 +11,7 @@
 
 A modern, full-featured real estate business website built with React 19, TypeScript, and Tailwind CSS 4. Features include property listings, advanced filtering, admin dashboard, and Firebase integration.
 
-[Features](#-features) • [Installation](#-installation) • [Project Structure](#-project-structure) • [Usage](#-usage) • [Technologies](#-technologies-used)
+[Features](#-features) • [Installation](#-installation) • [Project Structure](#-project-structure) • [Technologies](#-technologies-used)
 
 </div>
 
@@ -27,12 +27,9 @@ A modern, full-featured real estate business website built with React 19, TypeSc
 - [Architecture](#-architecture)
 - [Pages & Routes](#-pages--routes)
 - [Components](#-components)
-- [State Management](#-state-management)
 - [Firebase Configuration](#-firebase-configuration)
 - [Available Scripts](#-available-scripts)
 - [Environment Variables](#-environment-variables)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
