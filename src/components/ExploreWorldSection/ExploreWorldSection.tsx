@@ -25,7 +25,9 @@ const ExploreWorldSection = ({images} : ExploreImg) => {
                 })}
                 <div className="col-span-4 xl:col-span-2 order-6 ">
                     <SectionHeader title="Explore Estatein's World" className="mb-0! xl:mb-0 2xl:mb-0! mt-3.75 xl:mt-2.5 2xl:mt-4 nth-[1]:gap-0!"
-                    description="Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better."/>
+                    description="Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better."
+                    starbg="dark:bg-gray-10 bg-[#E8E8E8] "
+                    />
                 </div>
             </div>
         </div>
