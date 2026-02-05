@@ -36,7 +36,7 @@ const Nav : React.FC<NavProps> = ({ toggleMood }) => {
         <nav className={`fixed top-0 w-full z-100 bg-Platinum dark:bg-gray-10 text-gray-08`}>
                                            {/* top Panner */}
             {showBanner && (
-                <div className="h-19.5 xl:h-full pt-10 pb-5 xl:py-3.5 2xl:py-4.5 relative ps-4 md:ps-[5.208333vw] pe-12 xl:px-0  bg-[url(assets/images/navBG.webp)] bg-cover bg-center border border-Silver dark:border-gray-15">
+                <div className="h-19.5 xl:h-full pt-10 pb-5 xl:py-3.5 2xl:py-4.5 relative ps-4 md:ps-[5.208333vw] pe-12 xl:px-0  bg-[url(/assets/images/navBG.webp)] bg-cover bg-center border border-Silver dark:border-gray-15">
                     <p className="xl:text-center text-xs xl:text-sm 2xl:text-lg font-medium xl:pe-29 dark:text-white text-Jet-Gray">✨Discover Your Dream Property with Estatein <Link to={"/"} className="underline">Learn More</Link></p>
                     <AiOutlineClose onClick={() => setShowBanner(false)} className="dark:text-white text-Jet-Gray cursor-pointer w-6.5 h-6.5 2xl:w-8 2xl:h-8 rounded-full bg-white dark:bg-[#FFFFFF1A] absolute right-4 xl:right-7.5 p-1 top-9 xl:top-[50%] xl:-translate-y-1/2"/>
                 </div>
