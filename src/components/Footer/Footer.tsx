@@ -10,7 +10,7 @@ const Footer = (footerProps : FooterInterface) => {
   return (
     <div>
                              {/*Footer */}
-    <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75">
+    <div className="w-full px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]  xl:mr-25.25 py-12.5 xl:flex   xl:gap-25.25 xl:py-20 2xl:h-113.5  2xl:py-25 2xl:gap-48.75 leading-[150%]">
       <div >
         <div className="flex 2xl:gap-2.5 gap-[7.25px] mb-5 2xl:mb-7.5">
            <img className="2xl:w-12 2xl:h-12 w-.5 h-8.5" src={footerProps.footerProps.imageIcon}></img>
@@ -39,7 +39,7 @@ const Footer = (footerProps : FooterInterface) => {
                     
                     <h2 className="font-medium text-[16px] xl:text-[18px] 2xl:text-[20px] mb-2 text-gray-60 ">{colunm.serviceTitle}</h2>
                   
-                    <div className=" 2xl:mb-5 font-medium flex flex-col gap-2 xl:gap-4 2xl:gap-5 text-[14px] xl:text-[16px] 2xl:text-[18px]">
+                    <div className=" 2xl:mb-5 font-medium flex flex-col gap-2 xl:gap-4 2xl:gap-5 text-[14px] xl:text-[16px] mb-5 lg:mb-0 2xl:text-[18px]">
                         {colunm.services.map((item) => {
                         return (
                         <Link  to="/" >{item.service}</Link>

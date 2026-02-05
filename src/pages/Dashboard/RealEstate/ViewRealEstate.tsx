@@ -8,7 +8,7 @@ import { BsHouseCheck } from "react-icons/bs";
 const PricingRow = ({ label, value }: { label: string; value: number | string }) => (
       <div className="flex justify-between items-center py-3 border-b border-gray-15 last:border-0 text-[14px] lg:text-[18px]">
             <span className="text-gray-60">{label}</span>
-            <span className=" font-semibold">
+            <span className=" font-semibold text-Jet-Gray dark:text-white">
                   {typeof value === "number" ? `$${value.toLocaleString()}` : value}
             </span>
       </div>
@@ -32,14 +32,14 @@ const ViewRealEstate = () => {
       }
 
       return (
-            <div className=" flex flex-col gap-4 lg:gap-6 xl:gap-8 text-white">
+            <div className=" flex flex-col gap-4 lg:gap-6 xl:gap-8 text-Jet-Gray dark:text-white">
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row justify-between items-start md:items-center gap-4 mb-0!">
                         <div>
                               <button onClick={() => navigate("/dashboard")} className="flex items-center gap-2 text-gray-60 hover:text-white mb-4 transition-colors">
                                     <FaArrowLeft /> Back to List
                               </button>
-                              <h1 className="text-2xl md:text-4xl font-bold">{property.name}</h1>
+                              <h1 className="text-2xl md:text-4xl font-bold text-Jet-Gray dark:text-white">{property.name}</h1>
                               <div className="flex gap-5">
                                     <p className="flex items-center gap-2 text-gray-60 mt-2 text-[24px] font-medium">
                                           <FaMapMarkerAlt className="text-purple-60 " /> {property.location}
@@ -51,9 +51,9 @@ const ViewRealEstate = () => {
                               
                         </div>
 
-                        <div className="bg-gray-10 px-6 py-4 rounded-[10px] 2xl:rounded-xl border border-gray-15">
+                        <div className="bg-Platinum dark:bg-gray-10 px-6 py-4 rounded-[10px] 2xl:rounded-xl border border-Silver dark:border-gray-15">
                               <p className="text-gray-60 text-sm">Listing Price</p>
-                              <p className="text-2xl md:text-4xl font-semibold text-white">${property.pricing.listingPrice.toLocaleString()}</p>
+                              <p className="text-2xl md:text-4xl font-semibold text-Jet-Gray dark:text-white">${property.pricing.listingPrice.toLocaleString()}</p>
                         </div>
                   </div>
 
@@ -86,8 +86,8 @@ const ViewRealEstate = () => {
                   </div>
 
                   {/* Description & Specs*/}
-                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5!  bg-gray-10 mb-0!">
-                        <h3 className="text-xl font-bold mb-4">Description</h3>
+                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-Platinum dark:bg-gray-10 mb-0!">
+                        <h3 className="text-xl font-bold mb-4 ">Description</h3>
                         <p className="text-gray-60 leading-relaxed">{property.description}</p>
 
                         <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-gray-15">
@@ -112,11 +112,11 @@ const ViewRealEstate = () => {
                   </BaseCard>
 
                   {/* Amenities */}
-                  <BaseCard className=" p-5! xl:p-10! 2xl:p-12.5! bg-gray-10 mb-0!">
+                  <BaseCard className=" p-5! xl:p-10! 2xl:p-12.5! bg-Platinum dark:bg-gray-10 mb-0!">
                         <h3 className="text-xl font-bold mb-6">Key Features & Amenities</h3>
                         <div className="grid grid-cols-1 gap-4">
                               {(property.amenities || []).map((item, i) => (
-                                    <div key={i} className="flex items-center gap-2 text-gray-40 bg-gray-08 p-3 rounded-lg border border-gray-15">
+                                    <div key={i} className="flex items-center gap-2 text-gray-40 bg-Alice-Blue border-Silver dark:bg-gray-08 p-3 rounded-lg border dark:border-gray-15">
                                           <FaCheckCircle className="text-purple-60 shrink-0" /> {item}
                                     </div>
                               ))}
@@ -126,7 +126,7 @@ const ViewRealEstate = () => {
                   <h2 className="text-2xl font-bold border-l-4 border-purple-60 pl-4">Pricing Details</h2>
 
                   {/* Additional Fees */}
-                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-gray-10 mb-0!">
+                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-Platinum dark:bg-gray-10 mb-0!">
                         <h4 className="text-[16px] lg:text-[24px] text-purple-60 font-bold mb-4">Additional Fees</h4>
                         <PricingRow label="Transfer Tax" value={property.pricing.additionalFees.propertyTransferTax} />
                         <PricingRow label="Legal Fees" value={property.pricing.additionalFees.legalFees} />
@@ -135,14 +135,14 @@ const ViewRealEstate = () => {
                   </BaseCard>
 
                   {/* Monthly Costs */}
-                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-gray-10 mb-0!">
+                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-Platinum dark:bg-gray-10 mb-0!">
                         <h4 className="text-[16px] lg:text-[24px]  text-purple-60 font-bold mb-4">Monthly Costs</h4>
                         <PricingRow label="Property Taxes" value={property.pricing.monthlyCosts.propertyTaxes} />
                         <PricingRow label="HOA Fees" value={property.pricing.monthlyCosts.hoaFees} />
                   </BaseCard>
 
                   {/* Total Initial Costs */}
-                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-gray-10 mb-0!">
+                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-Platinum dark:bg-gray-10 mb-0!">
                         <h4 className="text-[16px] lg:text-[24px]  text-purple-60 font-bold mb-4">Initial Investment</h4>
                         <PricingRow label="Down Payment" value={property.pricing.totalInitialCosts.downPayment} />
                         <PricingRow label="Mortgage Amount" value={property.pricing.totalInitialCosts.mortgageAmount} />
@@ -150,7 +150,7 @@ const ViewRealEstate = () => {
                   </BaseCard>
 
                   {/* Monthly Expenses */}
-                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-gray-10 mb-0!">
+                  <BaseCard className="p-5! xl:p-10! 2xl:p-12.5! bg-Platinum dark:bg-gray-10 mb-0!">
                         <h4 className="text-[16px] lg:text-[24px] text-purple-60 font-bold mb-4">Monthly Expenses</h4>
                         <PricingRow label="Mortgage Payment" value={property.pricing.monthlyExpenses.mortgagePayment} />
                         <PricingRow label="Property Insurance" value={property.pricing.monthlyExpenses.propertyInsurance} />
