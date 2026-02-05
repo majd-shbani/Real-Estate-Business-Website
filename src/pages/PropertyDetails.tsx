@@ -15,7 +15,11 @@ const PropertyDetailsPage = () => {
       return (
             <div>
                   <PropertyDetailsHeader property={mappedData.header} />
-                  <PropertyKeyFeatures card={mappedData.features} />
+                  <PropertyKeyFeatures 
+                        title={mappedData.features.title}
+                        description={mappedData.features.description}
+                        propertyRooms={mappedData.features.propertyRooms}
+                        keyFeatures={mappedData.features.keyFeatures}/>
                   <InquireAboutSeaside/>
                   <PricingSection
                         title="Listing Price"

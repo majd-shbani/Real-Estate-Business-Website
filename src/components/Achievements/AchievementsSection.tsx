@@ -1,7 +1,8 @@
 
 import { achievementHeader, achievementsData } from "../../data/Achievment/Achievment"
 import Section from "../Section/Section";
-import  Achievement from "./Achievement"
+import Achievement from "./Achievement";
+
 
 
 

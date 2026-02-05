@@ -1,4 +1,4 @@
-export interface Achievement {
+export interface AchievementPropsData {
     id : number 
     title : string
     description : string
@@ -6,5 +6,5 @@ export interface Achievement {
 }
 
 export interface AchievementProps {
-    achievement: Achievement;
+    achievement: AchievementPropsData;
 }   
