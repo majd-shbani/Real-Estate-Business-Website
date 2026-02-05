@@ -8,7 +8,7 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
     <div className={`flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 ${showAction ? 'cursor-pointer' : ''}`} onClick={showAction ? onActionClick : undefined}>
         <label htmlFor={input.name} className={`font-semibold leading-[150%] xl:text-base 2xl:text-xl ${input.hideLabel ? 'hidden md:block md:invisible' : ''}`}>{input.label || '\u00A0'}</label>
         <div className={`flex items-center gap-1.5 2xl:gap-3 bg-Platinum dark:bg-gray-10 border border-Silver dark:border-gray-15 rounded-md 2xl:rounded-lg px-5 py-4 2xl:py-6 ${className}`}>
-          {input.icon && <img src={input.icon} alt={input.alt} className="w-5 2xl:w-6" />}
+          {input.icon && <img src={input.icon} alt={input.alt} className="w-5 2xl:w-6 invert dark:invert-0" />}
 
           {input.type === "select" ? (
             <div className="relative w-full flex items-center">
