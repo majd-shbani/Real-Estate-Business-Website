@@ -45,7 +45,7 @@ const Nav : React.FC<NavProps> = ({ toggleMood }) => {
                                             {/* nav */}
             <div className="flex items-center justify-between h-17 xl:h-19.25 2xl:h-24.75 px-4 md:px-[5.208333vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw]">
                 <div className="w-23.25 xl:w-28.25 2xl:w-40 flex items-center gap-1.5 xl:gap-2 2xl:gap2.5">
-                    <img src="assets/icons/navLogoSymbol.svg" className="w-7 xl:w-8.5 2xl:w-12" alt="company logo" />
+                    <img src="/assets/icons/navLogoSymbol.svg" className="w-7 xl:w-8.5 2xl:w-12" alt="company logo" />
                     <NavLogoText />
                 </div>
                 <ul className="hidden xl:flex">
