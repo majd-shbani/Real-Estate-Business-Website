@@ -8,3 +8,9 @@ export interface InterfaceAchievement {
 export interface AchievementProps {
     achievement: InterfaceAchievement;
 }   
+
+export interface AchievementPropsData {
+    id : number;
+    title : string;
+    description : string;
+}
