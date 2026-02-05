@@ -9,10 +9,10 @@ const DiscoverOurOfficeLocations = ({filters} : {filters: Array<string>}) => {
     return (
         <div className="mb-20 xl:mb-30 2xl:mb-[150px]">
             <Section title="Discover Our Office Locations" description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you">
-                <div className="max-w-129 mb-[30px] xl:mb-10 2xl:mb-[50px] p-2.5 rounded-lg 2xl:rounded-xl bg-gray-10 flex flex-wrap xl:flex-nowrap gap-2.5 items-center text-[clamp(12px,3vw,14px)] 2xl:text-lg font-semibold text-center">
+                <div className="max-w-129 mb-[30px] xl:mb-10 2xl:mb-[50px] p-2.5 rounded-lg 2xl:rounded-xl bg-Platinum dark:bg-gray-10 flex flex-wrap xl:flex-nowrap gap-2.5 items-center text-[clamp(12px,3vw,14px)] 2xl:text-lg font-semibold text-center">
                     {filters?.map((filter, index) => {
                         return(
-                            <button key={index} className={`flex-1 xl:basis-[158.6666px] rounded-[10px] py-3.5 2xl:py-[18px] px-[clamp(8px,2vw,20px)] whitespace-nowrap 2xl:px-6  border border-solid ${active == filter ? "bg-gray-08 border-gray-08" : "border-gray-15" }`} onClick={() => {
+                            <button key={index} className={`flex-1 xl:basis-[158.6666px] rounded-[10px] py-3.5 2xl:py-[18px] px-[clamp(8px,2vw,20px)] whitespace-nowrap 2xl:px-6  border border-solid ${active == filter ? "dark:bg-gray-08 dark:border-gray-08 bg-Alice-Blue border-Silver" : "border-Platinum dark:border-gray-15" }`} onClick={() => {
                                 setSelectedType(`${filter}`)
                                 setActive(`${filter}`)
                             }}>
