@@ -12,16 +12,17 @@ const Dashboard = ({ links }: DashboardProps) => {
       const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
       const closeMenu = () => setIsMenuOpen(false);
-      const savedTheme = localStorage.getItem("theme") || "";
-
       useEffect(() => {
+            const savedTheme = localStorage.getItem("theme") || "dark";
             if (savedTheme === "dark") {
                   document.documentElement.classList.add("dark");
             } else {
                   document.documentElement.classList.remove("dark");
             }
-      }, [savedTheme]);
-
+            return () => {
+                  document.documentElement.classList.remove("dark");
+            };
+      }, []); 
       return (
             <div className="flex h-screen overflow-hidden">
                   <header className="bg-Platinum dark:bg-gray-15 md:hidden fixed top-0 left-0 right-0  p-4 flex items-center justify-between z-50">
