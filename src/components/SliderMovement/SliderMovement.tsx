@@ -52,12 +52,12 @@ const SliderMovement = <T extends { id?: string | number }>({
     }, [data, updateNavigationState])
     if (!data || data.length === 0) {
         return (
-           <p className="text-gray-60 text-center py-10">No featured properties found.</p>
+            <p className="text-gray-60 text-center py-10">No featured properties found.</p>
         )
     }
 
     const SlideCounter = () => (
-        <span className="font-medium text-base 2xl:text-xl dark:text-white text-Jet-Gray">
+        <span className="font-medium text-sm sm:text-base 2xl:text-xl dark:text-white text-Jet-Gray">
             {String(currentIndex).padStart(2, '0')} 
             <span className="text-gray-60">
                 {' '}of {String(data.length).padStart(2, '0')}
@@ -91,25 +91,25 @@ const SliderMovement = <T extends { id?: string | number }>({
                 <div className="hidden xl:block">
                     <SlideCounter />
                 </div>
-                <div className="ms-auto xl:ms-0 flex items-center gap-3">
+                <div className="ms-auto xl:ms-0 flex items-center gap-2 sm:gap-3">
                     <button 
-                        onClick={handlePrevSlide} 
+                        onClick={handlePrevSlide}
                         disabled={isAtStart} 
                         aria-label="Previous slide"
-                        className={`transition-all border border-gray-15 rounded-full w-11 h-11 2xl:w-14.5 2xl:h-14.5 flex items-center justify-center
+                        className={`transition-all border border-gray-15 rounded-full w-10 h-10 sm:w-11 sm:h-11 2xl:w-14.5 2xl:h-14.5 flex items-center justify-center
                             ${isAtStart ? 'bg-gray-10 cursor-not-allowed opacity-50' : 'dark:bg-gray-15 bg-Platinum  hover:bg-purple-60 hover:border-none active:scale-95'}`}>
-                        <IoArrowBackOutline className={`w-6 h-6 2xl:w-7.5 2xl:h-7.5 ${isAtStart ? 'text-gray-40' : 'dark:text-white text-Jet-Gray'}`}/>
+                        <IoArrowBackOutline className={`w-5 h-5 sm:w-6 sm:h-6 2xl:w-7.5 2xl:h-7.5 ${isAtStart ? 'text-gray-40' : 'dark:text-white text-Jet-Gray'}`}/>
                     </button>
                     <div className="block xl:hidden ">
                         <SlideCounter />
                     </div>
-                    <button 
+                    <button
                         onClick={handleNextSlide} 
                         disabled={isAtEnd} 
                         aria-label="Next slide"
-                        className={`transition-all border border-gray-15 rounded-full w-11 h-11 2xl:w-14.5 2xl:h-14.5 flex items-center justify-center
+                        className={`transition-all border border-gray-15 rounded-full w-10 h-10 sm:w-11 sm:h-11 2xl:w-14.5 2xl:h-14.5 flex items-center justify-center
                             ${isAtEnd ? 'bg-gray-10 cursor-not-allowed opacity-50' : 'dark:bg-gray-15 bg-Platinum  hover:bg-purple-60 hover:border-none active:scale-95'}`}>
-                        <IoMdArrowForward className={`w-6 h-6 2xl:w-7.5 2xl:h-7.5 ${isAtEnd ? 'text-gray-40' : 'dark:text-white text-Jet-Gray'}`} />
+                        <IoMdArrowForward className={`w-5 h-5 sm:w-6 sm:h-6 2xl:w-7.5 2xl:h-7.5 ${isAtEnd ? 'text-gray-40' : 'dark:text-white text-Jet-Gray'}`} />
                     </button>
                 </div>
             </div>
