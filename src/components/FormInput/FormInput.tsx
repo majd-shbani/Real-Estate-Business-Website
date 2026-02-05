@@ -29,7 +29,7 @@ const FormInput = ({input, isActive, showAction, onActionClick, className}: Form
                 ))}
               </select>
               <div className="pointer-events-none absolute right-0 flex items-center text-gray-40">
-                <img src="assets/icons/drop.svg" alt="arrow-icon" className="w-5 h-5 2xl:w-full" />
+                <img src="/assets/icons/drop.svg" alt="arrow-icon" className="w-5 h-5 2xl:w-full" />
               </div>
             </div>
             

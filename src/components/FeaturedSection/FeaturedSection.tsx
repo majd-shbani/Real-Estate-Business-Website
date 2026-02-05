@@ -35,14 +35,11 @@ export const FeaturedSectionBase = ({ viewMode, data = [], loading = false }: Fe
                                                       { icon: "/assets/icons/Bathroom.svg", description: `${item.specs.bathrooms}-Bathroom` },
                                                       { icon: "/assets/icons/Villa.svg", description: item.type },
                                                 ] : undefined}
-
                                                 categoryBadge={viewMode === "properties" ? (item.categoryBadge || item.type) : undefined}
                                           />
                                     )}
                               />
                   )}
-
-                 
             </Section>
       );
 };

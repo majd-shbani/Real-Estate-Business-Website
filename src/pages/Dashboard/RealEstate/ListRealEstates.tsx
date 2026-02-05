@@ -29,9 +29,9 @@ const ListRealEstates = () => {
 
       return (
             <div className="space-y-10">
-                  <div className="flex justify-between items-center bg-gray-10 p-6 rounded-2xl border border-gray-15">
+                  <div className="flex justify-between items-center bg-Platinum border-Silver dark:bg-gray-10 dark:border-gray-15 p-6 rounded-2xl border ">
                         <div>
-                              <h2 className="text-3xl font-bold text-white">Properties Management</h2>
+                              <h2 className="text-3xl font-bold text-Jet-Gray dark:text-white">Properties Management</h2>
                               <p className="text-gray-60">Manage your real estate listings</p>
                         </div>
                         <button onClick={() => navigate("/dashboard/real-estate/create")} className="flex items-center gap-2 bg-purple-60 text-white px-8 py-4 rounded-xl font-bold hover:bg-purple-70 transition-all">

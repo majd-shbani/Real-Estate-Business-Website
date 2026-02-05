@@ -64,7 +64,7 @@ const ListEmployees = () => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex justify-between items-center">
-        <h2 className="text-lg xl:text-3xl font-semibold text-white">Employees</h2>
+                    <h2 className="text-lg xl:text-3xl font-semibold text-Jet-Gray dark:text-white">Employees</h2>
         <button
           onClick={() => navigate("/dashboard/employees/create")}
           className="flex items-center gap-2 px-4 py-2 bg-purple-60 text-white rounded-lg hover:bg-purple-70 transition-colors cursor-pointer">
