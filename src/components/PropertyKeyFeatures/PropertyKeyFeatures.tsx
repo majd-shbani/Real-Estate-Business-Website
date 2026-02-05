@@ -5,7 +5,7 @@ import type { PropertyKeyFeaturesProps } from "../../interfaces/PropertyKeyFeatu
 
 const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesProps) => {
   return (
-    <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] flex flex-col lg:flex-row  gap-5 lg:gap-5 2xl:gap-7.5   py-5 mb-20 xl:mb-30 2xl:mb-37.5 leading-[150%]">
+    <div className="w-full px-4 lg:px-[7.8125vw] xl:px-[5.55555vw] 2xl:px-[8.4375vw] flex flex-col lg:flex-row  gap-5 lg:gap-5 2xl:gap-7.5   mb-20 xl:mb-30 2xl:mb-37.5 leading-[150%]">
                
 
                  {/*Left Card : Description */}
@@ -41,10 +41,10 @@ const PropertyKeyFeatures = ( card  : PropertyKeyFeaturesProps) => {
         <div className="flex flex-col gap-4.5 xl:gap-5 2xl:gap-7.5 ">
           {card.card.keyFeatures.features.map((item) => {
             return (
-              <div className="align-center  2xl:h-15.75 border-l-1 border-purple-60 bg-gradient-to-r from-gray-10 to-transparent 2xl:w-max">
+              <div className="align-center  2xl:h-15.75 border-l-1 border-purple-60 bg-gradient-to-r from-Platinum dark:from-gray-10 to-transparent 2xl:w-max">
                 <div className="flex px-2.5 py-3 gap-2.5 xl:gap-2.5 xl:p-4 2xl:px-6 2xl:py-5 ">
                   <img className="invert dark:invert-0 my-auto h-4.5 w-4.5 lg:h-5 lg:w-5 " src={item.icon}></img>
-                  <p className="text-gray-60  text-[14px] xl:text-[16px] 2xl:text-[18px]">{item.feature}</p>
+                  <p className="text-Jet-Gray dark:text-gray-60  text-[14px] xl:text-[16px] 2xl:text-[18px]">{item.feature}</p>
                 </div>
               </div>
             )
