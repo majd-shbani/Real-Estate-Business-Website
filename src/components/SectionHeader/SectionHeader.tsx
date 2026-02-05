@@ -34,11 +34,11 @@ const SectionHeader = ({ title, description, buttonText, to, className, starbg, 
             </div>
 
             {buttonText && (
-    <div className="shrink-0 absolute bottom-0 lg:relative">
+    <div className="shrink-0 absolute -bottom-1.75 lg:relative">
         <Button
             text={buttonText}
             to={to}
-            className="dark:bg-gray-10 bg-[#E8E8E8] border-Silver  dark:text-white dark:hover:bg-gray-700 transition-colors leading-[150%] "
+            className="dark:bg-gray-10 bg-[#E8E8E8] px-2! sm:px-5! 2xl:px-6! border-Silver  dark:text-white dark:hover:bg-gray-700 transition-colors leading-[150%] "
         />
     </div>
 )}

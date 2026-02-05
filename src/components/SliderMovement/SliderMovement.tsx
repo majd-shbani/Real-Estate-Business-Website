@@ -91,7 +91,7 @@ const SliderMovement = <T extends { id?: string | number }>({
                 <div className="hidden xl:block">
                     <SlideCounter />
                 </div>
-                <div className="ms-auto xl:ms-0 flex items-center gap-2 sm:gap-3">
+                <div className="ms-auto xl:ms-0 flex items-center gap-1.5 sm:gap-3">
                     <button 
                         onClick={handlePrevSlide}
                         disabled={isAtStart} 
